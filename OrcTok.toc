@@ -4,6 +4,7 @@
 ## Author: Anshlun
 ## Version: @project-version@
 ## SavedVariables: OrcTokDB
+## X-Curse-Project-ID: 1720161
 ## IconTexture: Interface\Icons\Achievement_Character_Orc_Male
 ## AddonCompartmentFunc: OrcTok_OnAddonCompartment
 
