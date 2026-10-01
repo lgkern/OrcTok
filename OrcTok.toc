@@ -1,0 +1,22 @@
+## Interface: 16001, 120007, 120100, 120105
+## Title: OrcTok
+## Notes: OrcTok brainrot for your flight paths: a Deeprun Tram runner plus text-to-speech storytime.
+## Author: Anshlun
+## Version: @project-version@
+## SavedVariables: OrcTokDB
+## IconTexture: Interface\Icons\Achievement_Character_Orc_Male
+## AddonCompartmentFunc: OrcTok_OnAddonCompartment
+
+core\rng.lua
+core\text.lua
+core\sim.lua
+core\playlist.lua
+core\narrator.lua
+core\config.lua
+stories.lua
+ui\ground.lua
+ui\scene.lua
+ui\phone.lua
+ui\tune.lua
+core\session.lua
+main.lua

@@ -1,0 +1,107 @@
+local H = dofile("tests/helpers.lua")
+
+describe("Text", function()
+	local Text
+	before_each(function() Text = H.load().Text end)
+
+	describe("sentences", function()
+		it("splits after . ! ? and keeps the punctuation", function()
+			assert.same({ "Hello there.", "Is it me?", "Yes!" }, Text.sentences("Hello there. Is it me? Yes!"))
+		end)
+
+		it("treats paragraph breaks as boundaries and trims blank lines", function()
+			assert.same({ "One", "Two." }, Text.sentences("\n  One\n\nTwo.  \n"))
+		end)
+
+		it("keeps closing quotes with their sentence", function()
+			assert.same({ 'He said "no."', "Then left." }, Text.sentences('He said "no." Then left.'))
+		end)
+
+		it("does not split inside numbers or words", function()
+			assert.same({ "It cost 1.5 gold today." }, Text.sentences("It cost 1.5 gold today."))
+		end)
+	end)
+
+	describe("chunk", function()
+		it("packs whole sentences up to the limit", function()
+			assert.same({ "aa bb. cc.", "dd." }, Text.chunk({ "aa bb.", "cc.", "dd." }, 10))
+		end)
+
+		it("splits an over-long sentence between words", function()
+			local out = Text.chunk({ "one two three four five six" }, 10)
+			for _, c in ipairs(out) do assert.is_true(#c <= 10) end
+			assert.equal("one two three four five six", table.concat(out, " "))
+		end)
+	end)
+
+	describe("toXml", function()
+		it("puts a numbered bookmark before every word", function()
+			assert.equal('<bookmark mark="1"/>hi <bookmark mark="2"/>there', Text.toXml({ "hi", "there" }))
+		end)
+
+		it("escapes XML metacharacters in words", function()
+			assert.equal('<bookmark mark="1"/>a&amp;b&lt;c&gt;&quot;', Text.toXml({ 'a&b<c>"' }))
+		end)
+	end)
+
+	describe("buildUtterances", function()
+		it("speaks the title first, then the body chunks", function()
+			local u = Text.buildUtterances({ title = "My title", body = "First. Second." }, 100)
+			assert.equal(2, #u)
+			assert.equal("title", u[1].kind)
+			assert.same({ "My", "title" }, u[1].words)
+			assert.equal("body", u[2].kind)
+			assert.equal("First. Second.", u[2].plain)
+		end)
+	end)
+
+	describe("estimate", function()
+		it("returns increasing word starts beginning at zero", function()
+			local starts, total = Text.estimate({ "a", "bb", "ccc." }, 0)
+			assert.equal(0, starts[1])
+			assert.is_true(starts[2] > starts[1] and starts[3] > starts[2])
+			assert.is_true(total > starts[3])
+		end)
+
+		it("gets shorter as the rate goes up", function()
+			local words = Text.words("the quick brown fox jumps over the lazy dog.")
+			local _, slow = Text.estimate(words, -5)
+			local _, normal = Text.estimate(words, 0)
+			local _, fast = Text.estimate(words, 5)
+			assert.is_true(slow > normal and normal > fast)
+		end)
+
+		it("is roughly conversational speed at rate 0", function()
+			local words = Text.words(string.rep("word ", 170))
+			local _, total = Text.estimate(words, 0)
+			assert.is_true(total > 45 and total < 90, "170 short words took " .. total)
+		end)
+	end)
+
+	it("wordAt finds the word being spoken", function()
+		local starts = { 0, 1, 2 }
+		assert.equal(1, Text.wordAt(starts, 0.5))
+		assert.equal(2, Text.wordAt(starts, 1))
+		assert.equal(3, Text.wordAt(starts, 99))
+	end)
+
+	it("display strips wrapping punctuation but keeps ! and ?", function()
+		assert.equal("hello", Text.display('"hello,"'))
+		assert.equal("really?", Text.display("really?"))
+		assert.equal("don't", Text.display("don't."))
+		assert.equal("him", Text.display("(him)"))
+	end)
+
+	it("count formats TikTok-style", function()
+		assert.equal("999", Text.count(999))
+		assert.equal("1K", Text.count(1000))
+		assert.equal("12.4K", Text.count(12450))
+		assert.equal("128K", Text.count(128900))
+		assert.equal("1.2M", Text.count(1250000))
+	end)
+
+	it("clock formats mm:ss", function()
+		assert.equal("00:06", Text.clock(6))
+		assert.equal("37:16", Text.clock(37 * 60 + 16))
+	end)
+end)

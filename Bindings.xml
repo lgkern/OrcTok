@@ -1,0 +1,5 @@
+<Bindings>
+	<Binding name="ORCTOK_TOGGLE" header="ORCTOK" category="ADDONS">
+		OrcTok_Toggle()
+	</Binding>
+</Bindings>

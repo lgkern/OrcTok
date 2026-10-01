@@ -1,0 +1,20 @@
+# .pkgmeta — BigWigs packager manifest  (https://github.com/BigWigsMods/packager)
+# Drives .github/workflows/release.yml: on a version tag it assembles the addon zip,
+# substitutes @project-version@ (and friends) in OrcTok.toc, attaches the zip to a
+# GitHub release, and — once the storefront secrets/IDs exist — uploads to CurseForge.
+
+# The packaged top-level folder. MUST match the .toc base name (OrcTok.toc) so WoW
+# loads it. This also makes the repo/checkout folder name irrelevant.
+package-as: OrcTok
+
+# No libraries, so a lib-less ("-nolib") zip would be identical.
+enable-nolib-creation: no
+
+# Dev-only files that must NOT ship to users. (The packager already drops .git and
+# strips .pkgmeta itself.)
+ignore:
+  - .busted
+  - .luacheckrc
+  - .github
+  - tests
+  - docs

@@ -1,0 +1,38 @@
+name: CI
+
+# Runs on every push and pull request. (You can later restrict the push trigger
+# to `branches: [main]` once you're working through PRs.)
+on:
+  push:
+  pull_request:
+
+jobs:
+  lint:
+    name: Luacheck
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # Self-contained luacheck action (same one WeakAuras uses). Reads .luacheckrc.
+      - name: Luacheck
+        uses: nebularg/actions-luacheck@v1
+        with:
+          args: "--no-color -q"
+          annotate: warning
+
+  test:
+    name: Busted
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # PUC Lua 5.1 — the same interpreter WoW runs.
+      - uses: leafo/gh-actions-lua@v10
+        with:
+          luaVersion: "5.1.5"
+      - uses: leafo/gh-actions-luarocks@v4
+      - name: Install test dependencies
+        run: luarocks install busted
+
+      # Runs from the repo root, where .busted points at tests/ and the specs
+      # load core/ and ui/ by relative path.
+      - name: Run busted
+        run: busted
