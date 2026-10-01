@@ -717,4 +717,1169 @@ To the gnome on the night shift: you're doing great. I'm sorry I scared you. I'm
 
 Please wave next time. I'll knock twice.]],
 	},
+	{
+		sub = "MaliciousCompliance", user = "EightOhFive", ups = 91230, comments = 4410, age = "11h",
+		search = "raid leader late rule",
+		title = "Raid leader said anyone late gets locked out. Then he was late.",
+		body = [[
+Our raid leader has one rule. Raid starts at eight. At eight oh five, he closes the group. If you're not inside the instance, you're not in the raid. No exceptions. Not for traffic. Not for dinner. Not for a dwarf who, and I quote, "was stuck behind a slow ram."
+
+He enforces it hard. Last month our main tank was two minutes late because his cat sat on his keyboard. The raid leader replaced him with a warrior from trade chat who wore no pants.
+
+So last Tuesday, it's eight oh four. Everybody is inside Blackwing Lair. Everybody except the raid leader.
+
+His assistant, a quiet gnome mage, looked at the clock. She looked at us. She typed: "rules are rules."
+
+At eight oh five, she promoted herself, closed the group, and pulled the first boss.
+
+The raid leader logged in at eight oh seven. He whispered every one of us. "Let me in." "Guys." "This isn't funny." "I am the raid."
+
+We cleared three bosses that night. Our best night in months. The gnome called the pulls in a calm little voice. Nobody stood in fire.
+
+At the end, the raid leader posted in guild chat. "The late rule is cancelled, effective immediately."
+
+The gnome replied: "Effective eight oh five."
+
+She's the raid leader now.]],
+	},
+	{
+		sub = "pettyrevenge", user = "SummonedInMyPajamas", ups = 47720, comments = 2210, age = "1d",
+		search = "guild master summons me every morning",
+		title = "My guild master summoned me to farm at six every morning. So I learned to summon him.",
+		body = [[
+Our guild master is a paladin who wakes up at five thirty and believes everyone else should too.
+
+Every morning at six, I get a pop up. Someone is summoning me. It's him. I accept, because I'm scared of him. I appear in Silithus. In my pajamas. My character wears pajamas too. He has a robe for it.
+
+"Farm time," the guild master says. We farm for two hours. Every day.
+
+After three weeks, I had a plan. I'm a warlock. Warlocks can summon people too. You just need two friends to click the portal. My roommates don't play, so I paid them in pizza.
+
+I also knew one thing about the guild master. He has an addon that accepts every summon automatically, because, quote, "a real leader is always ready."
+
+At three thirty in the morning, my roommates and I stood in the middle of a murloc camp in Westfall. We clicked the portal.
+
+He appeared. Asleep. Not moving. In the middle of forty murlocs.
+
+You know the sound. Everybody knows the sound.
+
+The next morning he logged in to a repair bill of eighty gold and a mailbox full of fins. He didn't say anything. He just looked at me for a long time.
+
+He summons me at nine now. I can do nine.]],
+	},
+	{
+		sub = "ProRevenge", user = "PeaceblooMyLand", ups = 102300, comments = 6480, age = "2d",
+		search = "neighbor stealing herbs player housing",
+		title = "My neighbor kept picking my Peacebloom hedge. So I hired a dwarven surveyor.",
+		body = [[
+When player housing came out, I bought a little plot in Elwynn Forest. Small cottage. Herb garden. My pride and joy was a hedge of Peacebloom along the edge of my yard.
+
+My neighbor is a human warrior named Brad. Brad has a giant statue of himself on his lawn. Brad decided my Peacebloom was "on his side."
+
+Every morning, my hedge was gone. Brad was an herbalist. He was picking it. He was selling it. To me. On the auction house. I bought my own Peacebloom back twice before I noticed.
+
+I asked nicely. He said, "fences don't lie." There was no fence.
+
+So I hired a surveyor. A dwarf named Thurgrim. He came with a measuring chain, a brass telescope, and a flask. Mostly the flask. He walked the property for six hours, muttering.
+
+His report was clear. My Peacebloom was on my land. So was Brad's statue. So was half of Brad's house, including the front door. Brad had been living in my house for a year.
+
+The housing board gave me two options. Charge rent, or remove the structures.
+
+I chose rent. Brad pays me forty gold a month to live in his own kitchen. The statue now faces my cottage. I put a little hat on it.
+
+The Peacebloom grows back every morning. Brad doesn't pick it anymore. He waters it.]],
+	},
+	{
+		sub = "AmItheAzerothian", user = "TrollOnTheRailing", ups = 38810, comments = 5120, age = "7h",
+		search = "tauren sleeping on zeppelin deck",
+		title = "AITA for asking a tauren to stop lying down across the entire zeppelin?",
+		body = [[
+The zeppelin from Orgrimmar to the Undercity is not big. There are maybe ten good spots on the deck, and none of them have chairs.
+
+I get on. I'm a troll. I'm tall. I find a nice spot by the railing. Then a tauren gets on. He walks to the middle of the deck and types the sleep emote.
+
+He lies down. A tauren lying down is the size of a small house. He takes up half the deck. His hooves are in my space. His tail is on my foot.
+
+I asked him to sit up. He said, "I paid for this zeppelin." Nobody pays for the zeppelin. The zeppelin is free.
+
+Then he started snoring. In say chat. He typed "zzz" every ten seconds.
+
+Everybody else got squeezed to the edges. A gnome fell off. We were over the ocean. We did not see him again.
+
+Then the goblin captain came down. He looked at the tauren. He looked at me. He said, "you. Come with me."
+
+I thought I was in trouble. He took me up to the crow's nest. It had a chair. It had a view. It had a little bowl of snacks.
+
+"Upgrade," he said. "For passengers who don't make my deck look like a pasture."
+
+I spent the rest of the trip up there, eating snacks, watching the tauren roll overboard when the zeppelin turned.
+
+His friends say I should have just let him sleep. AITA?]],
+	},
+	{
+		sub = "AmItheAzerothian", user = "KneeledInLava", ups = 56340, comments = 9120, age = "16h",
+		search = "proposed during raid boss kill",
+		title = "AITA for proposing to my girlfriend during our guild's first Ragnaros kill?",
+		body = [[
+My girlfriend and I have raided together for three years. She's a priest. I'm a warrior. We met in Molten Core, so I thought, what better place to propose.
+
+The plan was simple. Ragnaros dies. Everybody cheers. I kneel, and I ask.
+
+Ragnaros was at two percent. I was so excited I hit the kneel emote early. My warrior knelt. In the lava. Facing the wrong way.
+
+It turns out kneeling stops you from attacking. I was the main tank. Ragnaros looked down at me, kneeling, not hitting him. Then he looked past me at my girlfriend. He hit her with the hammer.
+
+The raid wiped at one percent. Our closest attempt ever. Forty people dead on the floor, in the lava. And my ghost, floating above them all, typing in raid chat: "will you marry me?"
+
+Silence. Then the raid leader typed, "is this a hostage situation?"
+
+She said yes. Thirty eight people said "congrats." One person said, "you owe me a Thunderfury."
+
+We killed Ragnaros the next week. Nobody let me tank. The guild says I made the kill about me. My girlfriend says I made it about her, which is worse.
+
+AITA?]],
+	},
+	{
+		sub = "Parenting", user = "ChildrensWeekVictim", ups = 63100, comments = 3870, age = "3d",
+		search = "children's week orphan wants ice cream",
+		title = "I adopted an orphan for Children's Week and I think he's running a scam",
+		body = [[
+Every year, the Stormwind orphanage lets adventurers look after an orphan for a week. A little kid follows you around. You take him places. It seemed wholesome. I signed up.
+
+My orphan's name is Randis. He's about ten. He has the face of a small accountant.
+
+Day one, he wanted to see the Deeprun Tram. Fine. Day two, he wanted an ice cream. A specific ice cream, from a specific vendor, in a different city. Day three, he wanted to meet a famous hero. I took him to Ironforge to see the king. He asked the king for money. The king gave him money.
+
+Day four, he asked to see Onyxia's Lair. I said no. He cried in public. A crowd formed. A paladin said "shame." I took him to Onyxia's Lair.
+
+Day five, I caught him selling my potions on the auction house. He said it was "for the orphanage." The orphanage has never seen that money.
+
+Day six, he asked if he could stay a little longer. I said that's sweet. He said, "I mean in your house. My stuff is already there."
+
+At the end of the week, I returned him. The matron hugged him. He waved at me. Then he took a new adventurer's hand and walked her straight to the ice cream vendor.
+
+He's been an orphan for nineteen years. He's the richest person in Stormwind.]],
+	},
+	{
+		sub = "namenerds", user = "NotNamingHimArthas", ups = 44920, comments = 8803, age = "5h",
+		search = "husband wants to name baby arthas",
+		title = "My husband wants to name our son Arthas. He says it's a strong prince name.",
+		body = [[
+I'm eight months pregnant and we still don't have a name. Every name I suggest, my husband vetoes. Every name he suggests is from a video game.
+
+His first suggestion was Arthas. I liked it at first. It's unusual. It sounds royal. Then I looked it up.
+
+Arthas was a prince. He burned down a city. He killed his father. He became the Lich King and turned half the continent undead. My husband says that's "only the second half of his story," and "the first half was very promising."
+
+His other suggestions: Illidan, who betrayed everyone. Garrosh, who betrayed everyone, but louder. And Gul'dan, which he says is "basically Gordon."
+
+I suggested Varian. A good king. Strong. Loved his son. My husband agreed immediately. Too quickly.
+
+Then I learned that Varian's son is named Anduin. I said Anduin is pretty. My husband said, "yes. Anduin is great." Then, very quietly, "and his middle name could be Arthas."
+
+We're naming him Anduin. No middle name. I'm filling in the birth certificate personally.
+
+Edit: the baby is here. He's perfect. My husband just held him up to the window and whispered, "all I ever wanted was to protect you."
+
+I know that line. I'm watching him.]],
+	},
+	{
+		sub = "antiwork", user = "MediumSizedBird", ups = 154200, comments = 9930, age = "9h",
+		search = "do flight path gryphons get breaks",
+		title = "I'm a flight path gryphon. Twenty years of passengers, not one break.",
+		body = [[
+People think gryphons have it easy. You fly. You see the world. You ride the wind.
+
+Here's my actual day. Somebody walks up to the flight master. They click Ironforge. I don't get a choice. I take off.
+
+They sit on my back for four minutes. Sometimes eight. They don't talk to me. They don't look at the view. Most of them go AFK to make a sandwich. One guy fell asleep and drooled on my neck from Southshore to Menethil.
+
+I'm not allowed to land until we arrive. Not for water. Not for a bathroom break. If you've ever seen a gryphon fly a strange zigzag over the Wetlands, now you know why.
+
+The pay is nothing. The flight master keeps the gold. I get a bucket of fish at the end of the night. The fish come from the Deeprun Tram water. I've seen what lives in that water.
+
+Last week, a passenger complained the trip was "too slow." He was a dwarf in full plate armor, carrying a cannon. I'm a medium sized bird.
+
+So I took a new route. Scenic. Through every zone between Ironforge and Stormwind, including the Burning Steppes. He landed on fire.
+
+I'm being "retrained" now. But the other gryphons heard about it. We have a group chat.
+
+We're thinking about a strike. Imagine the flight paths. Imagine everybody walking.]],
+	},
+	{
+		sub = "TalesFromYourServer", user = "GoldshireInnkeep", ups = 71250, comments = 3310, age = "1d",
+		search = "raid group camped the inn",
+		title = "Forty raiders walked into my inn five minutes before closing and ordered water",
+		body = [[
+I'm the innkeeper in Goldshire. I've seen things. Most of them I can't talk about. But this one was the worst.
+
+Ten fifty five at night. I'm wiping the counter. The door opens, and they just keep coming in. Forty people. Full armor. Mounts parked outside on my flowers.
+
+The raid leader walks up and says, "table for forty, please." I have six tables. One of them is the table where the man in the dress sits. Nobody sits at that table.
+
+They order forty waters. Then the mage at the back conjures his own water and starts handing it out. In my inn. That's like bringing your own food to a restaurant.
+
+Then the raid leader asks me to set their hearthstones. All forty. Each one is a separate conversation. "Would you like to make this inn your home?" "Yes." Forty times.
+
+At midnight, they finally leave. Not to go home. They walk to the corner and start a dance party. The bard plays until four.
+
+The tip, on the table, was one copper and a gray item called "Broken Fang."
+
+The next night, they came back. Same time. They said, "we live here now."
+
+Technically, according to their hearthstones, they do.]],
+	},
+	{
+		sub = "AmItheAzerothian", user = "ChiliStrike", ups = 52870, comments = 6640, age = "13h",
+		search = "raid food buff stopped cooking",
+		title = "AITA for refusing to cook for the raid after my husband called my chili \"a bit much\"?",
+		body = [[
+I'm the cook in our guild. I maxed out cooking before anybody else. Every raid night I make forty bowls of Dragonbreath Chili, plus fish for the tanks, plus soup for the healers. It takes an hour. Nobody has ever said thank you, except one gnome who said it to the soup.
+
+My husband is our raid leader. Last week, in front of everyone in voice chat, he said, "babe, the chili's a bit much tonight. It's not like my mom's."
+
+His mom is a dwarf. She makes one thing. It's beer. In a bowl.
+
+So I stopped cooking. I didn't announce it. I just didn't bring food.
+
+The raid lost the food buff. Nobody noticed at first. Then the tanks started dying a bit faster. Damage went down a few percent. We wiped on a boss that's been on farm for six months.
+
+The raid leader asked in voice chat, "why does everyone feel weak tonight?" I said nothing. I ate a sandwich. In front of everybody. Alone.
+
+After the third wipe, he whispered me. "Please. The chili. I'm sorry."
+
+I said, "not sorry enough to say it in raid chat?" He said it in raid chat. Then guild chat. Then trade chat, for some reason.
+
+I'm cooking again. But his bowl is extra spicy now. He doesn't complain. He just cries a little while he eats it, and then he does great damage.]],
+	},
+	{
+		sub = "AskAzeroth", user = "WhyDidMyGuildDie", ups = 88010, comments = 12440, age = "8h",
+		search = "why do guilds fall apart",
+		title = "Serious question: why did my guild fall apart after twelve years?",
+		body = [[
+My guild was together for twelve years. We survived every expansion, every drama, every breakup. Then last month, everybody just stopped logging in. I don't understand. Can someone help me make sense of it?
+
+Top comment, with nine thousand upvotes:
+
+Guilds rarely end in one moment. It's usually slow. The raid leader burns out first, because he's been doing spreadsheets for a decade and nobody ever thanked him. The healers notice before anyone else, because they watch everybody's health bars all night, and they see the tiredness. Then the officers start arguing in private channels about loot rules that haven't mattered for years. People stop showing up on Thursdays. Then on Tuesdays.
+
+Your guild didn't die because anybody was a bad person. It died because people change, and life moves on, and that's okay. The important thing is to remember the good times, and to know that, in two thousand ten, the Lich King threw Tirion Fordring off the top of Icecrown Citadel, and he plummeted sixteen feet through an announcer's table.
+
+Reply from the original poster: I read this whole thing nodding. I was crying a little. I can't believe I fell for it again.]],
+	},
+	{
+		sub = "IAmA", user = "TotallyPrinceArthas", ups = 133400, comments = 21800, age = "2d",
+		search = "arthas ama frostmourne",
+		title = "I am Prince Arthas Menethil, here to talk about my new sword. Ask me anything!",
+		body = [[
+Hello everyone. I'm Arthas, crown prince of Lordaeron, currently the Lich King. I'm here today to talk about my new sword, Frostmourne. Ask me anything!
+
+Top question: "Why did you burn Stratholme?"
+
+Answer: "Let's keep the questions on Frostmourne, please."
+
+"Did you really kill your own father?"
+
+"Great question. Frostmourne is a runeblade, forged in the Shadowlands. It hungers."
+
+"What happened to your horse, Invincible?"
+
+"I'd prefer to talk about Frostmourne."
+
+"Jaina says you never called her back."
+
+"Frostmourne holds a lot of souls. It's very exciting."
+
+"Okay. Tell us about Frostmourne."
+
+"I'd rather not get into specifics."
+
+"Do you have any regrets?"
+
+"Only that this isn't about Frostmourne."
+
+"Is Frostmourne for sale?"
+
+"No. But it might be in a few years. Possibly in pieces. Ask Tirion."
+
+Edit: thank you all for the wonderful questions. Frostmourne is available for preorder now. Lordaeron, I'll see you soon.]],
+	},
+	{
+		sub = "StoriesAboutKevin", user = "KevinsRaidLeader", ups = 66120, comments = 4020, age = "10h",
+		search = "gnome engineer kevin",
+		title = "Kevin is the gnome engineer in our guild",
+		body = [[
+Every guild has a Kevin. Ours is a gnome engineer. His name is actually Kevin. He did not change it for the game. He said, "it's my name, why would I change it."
+
+Kevin has the Goblin Jumper Cables. They bring someone back to life, sometimes. Kevin used them on a boss. He said he wanted to "check if it was really dead." It was not anymore.
+
+Kevin once asked what "line of sight" meant. We told him: stand behind the pillar. He walked behind a pillar. The pillar was in the next zone.
+
+Kevin bought the most expensive mechanical mount on the server. He used it once, in Ironforge, and it exploded. Kevin was fine. The mailbox was not.
+
+Kevin asked us why his health kept going down. He was standing in fire. We told him to move. He moved deeper into the fire. He said, "I'm committed now."
+
+But the best Kevin story is the Gnomish Universal Remote. It's supposed to control a mechanical creature for a few seconds. It fails most of the time. Kevin pointed it at the raid leader. A night elf. Not mechanical. Not even a little bit.
+
+It worked.
+
+Kevin controlled the raid leader for ten seconds. He used all ten to make him dance.
+
+Nobody knows how he did it. Kevin doesn't know either. We love Kevin.]],
+	},
+	{
+		sub = "talesfromtechsupport", user = "GameMaster_Ellowyn", ups = 79400, comments = 3120, age = "1d",
+		search = "game master ticket stuck",
+		title = "I've been a Game Master for fifteen years. This is the ticket that broke me.",
+		body = [[
+Most tickets are simple. "I'm stuck." I teleport you. "I lost an item." I check the logs. "A guy said something mean." I read the logs, I sigh, I send a warning.
+
+Then there's this one.
+
+Ticket: "my character is stuck. please help. urgent."
+
+I go to the location. The player is in the Goldshire inn. He's sitting in a chair.
+
+I whisper him. "Hi, I'm a Game Master. How can I help?"
+
+He says, "I'm stuck."
+
+I ask, "can you try pressing the space bar, or moving forward?"
+
+He says, "I don't want to stand up. I'm comfortable. But I'm stuck."
+
+I explain, gently, that being comfortable isn't the same as being stuck. He says, "you don't know my life."
+
+Then he asks if I can teleport him, in the chair, to Ironforge. I explain that the chair is part of the inn. He says, "so take the inn."
+
+I said no. He asked for my manager. I said I answer to the Light. He asked, "can I talk to the Light?"
+
+Forty minutes later, he stood up. Just stood up and walked away. Then he sent a new ticket. "Thanks for the help. Very professional. Five stars."
+
+He sends a ticket every Tuesday now. I always take it. It's the only one where I get five stars.]],
+	},
+	{
+		sub = "IDontWorkHereLady", user = "BrownLeatherWarrior", ups = 58800, comments = 2740, age = "6h",
+		search = "people think i'm a vendor",
+		title = "I went AFK in front of the Stormwind bank and people started selling me their junk",
+		body = [[
+I'm a human warrior. I wear very plain armor. Brown leather, a gray shirt, no helmet. Basically the outfit of every vendor in Stormwind.
+
+I stood in front of the bank and went AFK to make dinner. When I came back, I had twenty three trade requests.
+
+People were trying to sell me things. Wolf pelts. Broken teeth. A pair of gloves just called "Worn Gloves." One guy put fourteen pieces of linen in the trade window and asked how much I'd give him.
+
+I typed, "I don't work here." He typed, "ok but how much."
+
+I walked to the auction house. A human mage followed me. Very fancy robe. She said, "excuse me, are you the one who repairs?" I said I'm a player. She said, "can you check in the back?"
+
+There is no back. It's a video game.
+
+I went to Ironforge to get away from it all. I stood near the forge for one second. A dwarf asked me to make him a sword.
+
+So here's the thing. I learned blacksmithing that afternoon. I made him the sword. He tipped me five gold.
+
+Now I just stand there, in my brown outfit. People bring me stuff, and I fix it. I make more gold than I ever did raiding.
+
+I don't work here. But I kind of do now.]],
+	},
+	{
+		sub = "ChoosingBeggars", user = "EnchanterForExposure", ups = 49300, comments = 2870, age = "18h",
+		search = "free enchant for exposure",
+		title = "Guy wanted Crusader on his sword for free because he'd \"tell everyone who did it\"",
+		body = [[
+I'm an enchanter. I've spent hundreds of gold leveling enchanting. Crusader is one of the best enchants in the game, and the materials alone cost a fortune.
+
+A level sixty rogue whispers me. "hey can u do crusader, I'll bring the sword."
+
+I tell him the price for materials, plus a tip. He replies: "how about free, and I tell everyone who did it."
+
+I asked, "tell everyone what?"
+
+"That you did it," he said. "It's good exposure. I'm very famous on this server."
+
+I checked. He was not famous. His guild had three members, and one of them was his own bank alt.
+
+I said no thank you. He offered "the experience." Then a pair of gray pants. Then his "eternal respect." Then he reported me for being a bad enchanter, which I didn't think was possible, since I hadn't enchanted anything.
+
+So I made him an offer. One free enchant. I put Minor Beastslaying on his sword. Two extra damage. Against beasts only.
+
+He was thrilled. He went straight to Blackrock Spire and swung at a dragon. Nothing happened. He came back and said, "it doesn't work."
+
+I said, "tell everyone who did it."
+
+He did. In trade chat. For an hour. I got eleven new customers that night, all paying. Exposure works after all.]],
+	},
+	{
+		sub = "entitledparents", user = "SlowAndSteadyTurtle", ups = 61740, comments = 3990, age = "2d",
+		search = "kid wants to ride my turtle mount",
+		title = "Entitled mom demanded my Sea Turtle mount because her son \"is a child\"",
+		body = [[
+I was sitting on my Sea Turtle outside the Stormwind bank. It took me three months of fishing to get it. Tiny drop chance, from fishing pools. It's not fast. It's a turtle. I love it.
+
+A level eleven paladin walks up and stares at it. Then his mom shows up. Night elf. Very tall. Very angry.
+
+She says, "my son wants to ride your turtle." I said sorry, mounts are just for me. She said, "he's a child." I said, "he's level eleven. He can't even ride." She said that's discrimination against children.
+
+She asked me to "just get off it for a minute so he can sit on it." That is not how mounts work. She said, "you're so selfish. It's literally just a turtle."
+
+I said, "if it's just a turtle, go get one." I gave her directions. Any fishing pool. Tiny chance.
+
+That was three months ago. She is still fishing. I see her every day at the Stormwind canals. Her son leveled to fifty while she fished. He has his own mount now. He doesn't care about turtles anymore.
+
+Yesterday, she finally caught it. She typed in general chat, "finally!!" Her son typed, "mom it's slow."
+
+She whispered me something I can't repeat.
+
+I waved at her. From my turtle.]],
+	},
+	{
+		sub = "pettyrevenge", user = "MageWithTheGoodWater", ups = 70480, comments = 3560, age = "12h",
+		search = "who keeps taking food from guild bank",
+		title = "Someone kept stealing the raid food from the guild bank, so I left a special batch",
+		body = [[
+I'm the guild's mage. Every week, I conjure a full tab of food and water for our raids. Cinnamon rolls, mana biscuits, the good water. I put it in the guild bank so everyone can grab some before raid.
+
+Every week, the whole tab was empty by Monday. Raid is on Tuesday.
+
+Four hundred cinnamon rolls. Gone. I asked in guild chat. Everybody said "not me." The bank log said: "Bubbles withdrew four hundred Conjured Cinnamon Rolls."
+
+Bubbles is a hunter. Bubbles has a pet bear. Bubbles said the bear was "hungry."
+
+So this week, I left something special. Our cook made me forty bowls of Dragonbreath Chili. If you've never had it, it makes you breathe fire. Randomly. For a while. I put it in the tab and labeled it "cinnamon rolls."
+
+On Monday morning, the chili was gone.
+
+Bubbles showed up to raid breathing fire. Every few seconds, by accident. Everybody near him took damage. He set the raid leader on fire twice. He set his own bear on fire.
+
+I asked, very innocently, "Bubbles, what did you eat?"
+
+He said, "cinnamon rolls."
+
+The bank tab has stayed full ever since. And the bear looks a lot thinner. I don't think the bear was ever the problem.]],
+	},
+	{
+		sub = "LetsNotMeet", user = "ThreeAMIronforge", ups = 114300, comments = 7210, age = "4d",
+		search = "dancing gnome ironforge at night",
+		title = "The dancing gnome of Ironforge",
+		body = [[
+This happened around three in the morning, server time. I couldn't sleep, so I was walking through Ironforge to the bank. The city was empty. That's normal at three. Just the guards and the sound of the forge.
+
+I came around the corner of the Commons and saw him. A gnome. Standing in the middle of the road, about a hundred yards away. Pink hair. Dancing.
+
+Not normal dancing. He was dancing, but moving toward me. One step forward. Dance. One step forward. Dance. The whole time, he was facing me. Smiling. Gnomes don't really smile in this game. Their faces don't do that. His did.
+
+I stopped. He stopped. I took a step back. He took a step forward, still dancing.
+
+I typed, "hello?" He didn't type anything. He just danced faster.
+
+I mounted up and rode away. I took the long way to the bank, through the Military Ward. When I got there, I turned around.
+
+He was already there. Dancing on the bank counter. Facing me.
+
+I logged out.
+
+The next day, I asked in general chat if anyone knew about a dancing gnome. Eleven people replied. All the same story. Three in the morning. Pink hair. Always dancing toward you.
+
+One person said, "don't worry, he's harmless."
+
+Another person replied, "that's what he said too."]],
+	},
+	{
+		sub = "nosleep", user = "AshenvaleSentinel", ups = 97600, comments = 5530, age = "3d",
+		search = "stairs in the middle of ashenvale forest",
+		title = "I'm a Sentinel in Ashenvale. We don't talk about the stairs.",
+		body = [[
+I've patrolled Ashenvale for three hundred years. I've seen satyrs, furbolgs, and a lot of orcs who look at a tree and see lumber. Nothing in this forest scares me.
+
+Except the stairs.
+
+Sometimes, deep in the forest, far from any building, you find a staircase. Stone. Old. Clean. It goes up about ten steps and stops. Nothing at the top. Nothing around it.
+
+The first time I found one, I asked my captain. She went pale, which for a night elf means slightly less purple. She said, "Don't go up them. Don't touch them. Don't put them in your report."
+
+I've found eleven since. Never in the same place twice. And each one has one more step than the last.
+
+Last week, a young adventurer came to our outpost. Level twenty two. Very excited. He said he'd found "the coolest thing" in the forest. A staircase. Twenty two steps. He said the top step was warm, and he could see a little door up there, hanging in the air. He was going back to open it.
+
+I told him not to. He laughed. He said, "I'm level twenty two. I can handle a door."
+
+We found his hearthstone the next morning, at the bottom of the stairs. When I picked it up, it said: "Home: The Stairs."
+
+I keep it in my locker now. Some nights, it's warm.]],
+	},
+	{
+		sub = "nosleep", user = "FellThroughTheBank", ups = 108800, comments = 6890, age = "5d",
+		search = "fell through the world stormwind",
+		title = "I fell through the world in Stormwind. There's something under the map.",
+		body = [[
+You know when the game glitches and you fall through the floor? Usually you fall for a few seconds, then you die and wake up at a graveyard.
+
+I didn't die.
+
+I was walking out of the Stormwind bank and the floor just stopped existing. I fell. The city got smaller above me. Then I landed on something flat, gray, and endless.
+
+Plain gray ground, in every direction. No trees. No buildings. Every few hundred yards, a single object was just placed there. A chair. A mailbox. A wolf, standing completely still. I walked past the wolf. It didn't turn its head.
+
+I walked for an hour. My map showed nothing. My coordinates said zero, zero.
+
+Then I found a table. At the table sat a man in a gray robe, with a name tag that just said "Designer." He was eating a sandwich.
+
+He looked up and said, "oh. You're not supposed to be here."
+
+I asked where here was. He said, "this is where we keep things before they go in the world." He pointed. In the distance stood Hogger. Unfinished. No texture. Just a gray dog man, waiting.
+
+The designer sighed, typed something, and I woke up in Stormwind. At the bank. Five seconds before I fell.
+
+Nobody believes me. But every time I walk past the bank now, there's a gray chair on the corner. Nobody else can see it.]],
+	},
+	{
+		sub = "nosleep", user = "GryphonMasterNightShift", ups = 121900, comments = 8040, age = "2d",
+		search = "gryphon came back without rider",
+		title = "I'm a flight master. Some gryphons come back without riders.",
+		body = [[
+I've run the gryphon roost in Stormwind for nine years. The job is simple. Adventurer pays. Gryphon flies. Gryphon comes back. Two thousand flights a day.
+
+But some nights, a gryphon comes back alone. The saddle is still warm. The rider is gone.
+
+My boss gave me rules.
+
+Rule one. If a gryphon lands without a rider, do not ask it where it's been. It will tell you.
+
+Rule two. Never sell a ticket to "Nowhere." It's not on the map. But sometimes, after midnight, someone asks for it. They're always polite. They always pay in old coins.
+
+Rule three. If a passenger looks at a small glowing rectangle during the flight, let them. They're watching a little person run through a tunnel, and they need to finish the story.
+
+Rule four. Count the gryphons at closing. If there's one more than this morning, don't saddle it. It isn't ours.
+
+Last night I counted forty one. We have forty.
+
+The extra one stood at the end of the roost, very quiet. On its back sat a little rider made of shadow. He held out an old coin.
+
+I asked, "where to?"
+
+He said, "wherever you're going."
+
+I'm writing this from the back of a gryphon. We've been flying for six hours. Every zone below looks the same. If you're on a flight path right now, look up. I'll wave.]],
+	},
+	{
+		sub = "AskHistorians", user = "ProfessorOfPlague", ups = 84200, comments = 3300, age = "1d",
+		search = "corrupted blood plague history",
+		title = "What was it like to live through the Corrupted Blood plague?",
+		body = [[
+Great question. The Corrupted Blood plague is one of the best documented outbreaks in Azerothian history, mostly because everyone involved was standing in a capital city, typing about it.
+
+It began in Zul'Gurub. The blood god Hakkar cursed adventurers with a disease that jumped from person to person. It was supposed to stay inside the temple. It did not. A hunter's pet carried it out. Historians still argue about which hunter. Hunters refuse to comment.
+
+Within hours, it reached Ironforge and Orgrimmar. Low level players died in seconds. Skeletons covered the streets. One eyewitness described the Ironforge bank as "just bones and mailboxes."
+
+Society split. Healers stood at the city gates and cured strangers for free. Some players fled to the countryside and refused to come back. And a small, terrible group infected themselves on purpose and teleported into crowds. Historians have a technical term for these people. The term is "griefers."
+
+Afterwards, real world scientists studied the event to learn how people behave during an epidemic. That part is true, by the way. That actually happened.
+
+The plague ended when the gods reset the servers. Modern historians call this "a bit of a cheat."
+
+Sources: I was there. I was a level twelve gnome. I died eleven times outside the Ironforge bank. I'm still a little bit angry.]],
+	},
+	{
+		sub = "relationship_advice", user = "Mankrik_Crossroads", ups = 176300, comments = 20100, age = "20h",
+		search = "where is mankrik's wife",
+		title = "My (40M) wife went missing in the Barrens. Strangers keep asking everyone except me where she is.",
+		body = [[
+My name is Mankrik. I'm an orc. I live at the Crossroads in the Barrens. Years ago, my wife, Olgra, went missing after a quilboar attack.
+
+I've asked every adventurer who walked past to help me find her. Thousands of them. They all said yes. They all walked away. And an hour later, they all typed in Barrens chat: "where is Mankrik's wife?"
+
+Here's my problem. They never asked me. I'm right here. I'm the husband. I gave directions. Very clear directions. "South, past the road, near the quilboar."
+
+Instead they ask the whole zone. And the whole zone answers with jokes. Somebody said she was with Chuck Norris. Somebody said she was in the Deeprun Tram. One guy said, "she left you, man." In public. While I was standing right there.
+
+I've stood at the Crossroads for twenty years. The flight master gets more respect than me. At least people know where he is.
+
+Recently, someone finally found her. In the Shadowlands. In the Maw. Which is the afterlife's worst neighborhood. Sixteen years of searching, and she was in the Maw.
+
+I'm not sure what I'm asking. How do I move on? Is it rude to start dating when the whole zone still thinks she's "south, past the road"?
+
+Edit: someone just asked me where my wife is. I'm going to lose it.]],
+	},
+	{
+		sub = "HobbyDrama", user = "BootyBayDockReporter", ups = 69900, comments = 5480, age = "3d",
+		search = "fishing tournament cheating gnome",
+		title = "The Stranglethorn fishing scandal: how a gnome got caught stuffing his fish",
+		body = [[
+For those who don't know: every Sunday, Booty Bay holds a fishing tournament. Last year, the goblins added a new prize. Heaviest single fish.
+
+For three years, one name won it every week. A gnome named Fizzwick. His fish were enormous. A normal Speckled Tastyfish weighs about a pound. Fizzwick's weighed twelve. The goblin judge called it "a miracle of nature." The prize was fifty gold a week.
+
+The other anglers had questions. Mostly an old dwarf named Grunda, who had fished those waters for forty years, and had never caught anything bigger than her own boot.
+
+So this Sunday, at the weigh in, Grunda walked up to the scale, grabbed Fizzwick's fish, and cut it open with her fishing knife. On the dock. In front of everyone.
+
+Inside the fish were four mithril bars. A lead weight. And a smaller fish. Inside the smaller fish was another mithril bar.
+
+The crowd went silent. Then the crowd went feral. Someone threw a crab. The goblin judge banned Fizzwick for life, then asked if he could keep the mithril.
+
+Fizzwick escaped on a goblin rocket. He was last seen over the ocean, still holding his trophy.
+
+The aftermath: every fish at the tournament is now cut open before weighing. Grunda won last week with a fish weighing one pound. The crowd gave her a standing ovation.
+
+Somewhere out there, Fizzwick is still fishing.]],
+	},
+	{
+		sub = "conspiracy", user = "BigGryphonLies", ups = 33100, comments = 9710, age = "6h",
+		search = "ironforge airport is real",
+		title = "The Ironforge Airport is real and the dwarves don't want you to know",
+		body = [[
+Okay. Hear me out. I've been researching this for years.
+
+Ironforge is a city inside a mountain. One gate, one tram. But in the early days, players who climbed on top of the mountain found something. Hidden. Above the city. A huge flat area. Runways. Hangars. A tower. A whole airport.
+
+Why would you need an airport, on a mountain, in a world full of gryphons?
+
+The dwarves said it was "nothing." Then the Game Masters started teleporting away anyone who found it. Then they made the mountain impossible to climb.
+
+That's when I knew.
+
+Years later, the airport suddenly "opened," as part of a new quest. Planes. Mechanics. Fuel. They said it was new. It was not new. I have screenshots. I have dated screenshots.
+
+So here's my theory. Have you ever noticed you can't steer your gryphon? You can't stop. You can't land early. You sit there for six minutes while it follows a fixed route. That's not a bird. That's an airline.
+
+Every flight path in the Eastern Kingdoms goes through the Ironforge airport. That's why the Wetlands flight takes so long. It's a layover.
+
+Wake up. The gryphons are planes with feathers glued on.
+
+Edit: a dwarf just whispered me "nice theory, lad," and nothing else. I'm scared.]],
+	},
+	{
+		sub = "wallstreetbets", user = "ArcaniteHands", ups = 95700, comments = 14300, age = "1d",
+		search = "light feather short squeeze",
+		title = "I put my entire life savings into Light Feathers. Apes together strong.",
+		body = [[
+Position: eleven thousand Light Feathers. Average cost: four silver each. Funded with my savings, my mount, and my wedding ring. My wife doesn't know about the ring.
+
+The thesis: Light Feathers are the reagent for Slow Fall. Mages need them. Priests need them. Every time someone jumps off the Thunder Bluff elevator, they need them. Demand is infinite.
+
+The goblins at the auction house have been shorting feathers for years. They sell them cheap to make you think they're worthless. They're not worthless. They're the future.
+
+So I bought every feather on the server. Every listing. The price went up to two gold each. Trade chat went crazy. A mage asked, "who did this." Diamond hands, baby. Or in this game, Arcanite hands.
+
+Then the patch came out.
+
+Slow Fall doesn't need a reagent anymore.
+
+So now I hold eleven thousand feathers. They're worth nothing. My guild calls me "the Bird Man." My wife found out about the ring.
+
+But I'm not selling. I'm holding. Because one day, someone will need eleven thousand feathers. And when they do, I'll be here. In my bank. With my bank alts. In a house made entirely of feathers.
+
+To the moon. Or at least, a very slow fall back down.]],
+	},
+	{
+		sub = "AmItheAzerothian", user = "KelThuzadDad", ups = 112800, comments = 16200, age = "9h",
+		search = "raiding while wife in labor",
+		title = "AITA for not leaving the raid when my wife went into labor?",
+		body = [[
+Please hear me out before you judge.
+
+Last Tuesday, we were on Kel'Thuzad. Hardest boss in the game. Nine months of progression. Our best attempt ever. He's at ten percent.
+
+My wife walks into my office and says, calmly, "it's time."
+
+I said, "the baby?" She said, "yes, the baby." I said, "how much time?" She said, "enough." I didn't leave. I know how that sounds.
+
+Here's what you need to know. My wife is our raid leader.
+
+She walked to her own computer, put on her headset, and started calling phase three. Between contractions. "Spread out. Breathe. Spread out. Breathe."
+
+At five percent, her water broke. She said, "keep going." At two percent, I asked if we should stop. She said, "if anyone leaves this raid, I will remove you from the guild, and from the family."
+
+We killed him. Forty people screaming in voice chat. My wife typed "gg," took off her headset, and said, "now drive."
+
+The baby was born three hours later. Healthy. Loud. My wife's first question to the nurse was, "is there a way to link loot in here?"
+
+Her family thinks I'm the worst husband alive. They don't know she's the one who said keep going. She won't tell them, because, quote, "it's funnier this way."
+
+AITA?]],
+	},
+	{
+		sub = "relationship_advice", user = "WhoIsHealingAtNight", ups = 87300, comments = 9040, age = "14h",
+		search = "character gets achievements while i sleep",
+		title = "My (34M) character keeps getting achievements while I'm asleep",
+		body = [[
+About three months ago, something weird started happening. I logged into my paladin in the morning and he was level sixty one. I went to bed at sixty.
+
+I thought it was a glitch. Then it kept happening. New achievements. Reputation going up. One morning, I was exalted with a faction I'd never heard of. Another morning, I had a new mount. A pink one.
+
+My guild started acting strange. They said I was "so much nicer at night." Someone said, "thanks for the heals last night, you've really changed." I'm a tank. I don't heal. I've never healed.
+
+I thought I'd been hacked. I changed my password. It kept happening.
+
+So I set up a camera.
+
+At two in the morning, my wife got up, walked to my computer, logged in, and started playing. She was humming. She was very good. She healed a whole dungeon in my gear. She did my daily quests. She sold my junk. She sorted my bags by color.
+
+I confronted her. She said she started because the game "looked fun" and she didn't want to bother me by asking. She's been doing it for two years. She also has her own account. Her main is level seventy. Better geared than mine.
+
+I don't know how to feel. My guild prefers her. My character prefers her. Honestly, the pink mount prefers her.
+
+Edit: I asked her to join our raids as our tank. She's a better tank, too.]],
+	},
+	{
+		sub = "MadeMeSmile", user = "NanabearsGrandson", ups = 241600, comments = 11800, age = "1d",
+		search = "grandma played wow until she was 84",
+		title = "My grandma played a night elf hunter until she was eighty four. Today I logged into her account.",
+		body = [[
+My grandma started playing in two thousand five. She was sixty three. She said she wanted to "understand what my grandson was always yelling about."
+
+She made a night elf hunter named Nanabear. She tamed an owl and named it Gerald, after my grandpa.
+
+She played every day. Slowly. She read every quest. She never skipped a cutscene. She never ran a dungeon, because she "didn't like to be rushed by strangers." It took her four years to reach max level.
+
+Last month, she passed away. Peacefully. She was eighty four.
+
+Today, I logged into her account. Nanabear was standing in Darnassus, by the moonwell, where she always parked. Gerald was next to her.
+
+Her mailbox had one unsent letter, addressed to me. It said:
+
+"Dear sweetheart. I left you my gold. It's not much. Spend it on something silly. Don't forget to feed Gerald. He likes the fish, not the bread. Love, Nana."
+
+She left me eleven thousand gold. It turns out my grandma was the richest herbalist on the server. Her auction history goes back fifteen years. Trade chat called her "the Herb Queen."
+
+So I bought something silly. A giant mammoth with two vendors on its back. She would have laughed for a week.
+
+Then I fed Gerald. The fish, not the bread.]],
+	},
+	{
+		sub = "HFY", user = "GnomereganFieldNotes", ups = 58200, comments = 2100, age = "4d",
+		search = "gnome research notes dwarves",
+		title = "Gnomish research notes on the dwarves, who are terrifying",
+		body = [[
+Research log. Gnomeregan Department of Species Studies. Subject: our neighbors, the dwarves.
+
+Day one. The dwarves live inside a mountain. They did not find a cave. They found a mountain and decided it should be a cave. They used their hands.
+
+Day four. I watched a dwarf drink something called Thunder Ale. I tested a sample. It dissolved my test tube. The dwarf had four. Then he went to work. In a forge. Next to lava. For fun.
+
+Day nine. A dwarf fell off a cliff today. About sixty feet. He stood up, said "that's a good fall," and climbed back up to do it again. He said that's "how you test a cliff."
+
+Day thirteen. I asked a dwarf what his people fear. He thought for a long time. He said, "running out of beer." I asked what else. He said, "dying sober."
+
+Day twenty. A dragon attacked the outpost. The gnomes, being rational, hid. The dwarves ran toward the dragon. One of them headbutted it. The dragon left. It looked embarrassed.
+
+Day twenty one. I asked the dwarves why they are allied with us. They said, "because ye're small, and clever, and we like ye." I asked what would happen if they did not like us. The dwarf laughed, patted me on the head, and gave me a beer.
+
+I did not drink the beer. I am alive. I would like to stay that way.
+
+Conclusion: we are very lucky they are our friends.]],
+	},
+	{
+		sub = "WritingPrompts", user = "AngelLadyWantsToSing", ups = 77300, comments = 1480, age = "2d",
+		search = "spirit healer has a breakdown",
+		title = "You die for the thousandth time, and the Spirit Healer finally snaps",
+		body = [[
+You open your eyes in the graveyard. Gray world. Blue glow. The Spirit Healer floats in front of you, same as always.
+
+"Hello again," she says.
+
+"Hi," you say. "Could you bring me back? Hogger again."
+
+She doesn't move. She unrolls a scroll. It's very long. It rolls across the grass, past the fence, into the forest.
+
+"Do you know how many times you've been here?"
+
+You guess. "A hundred?"
+
+"One thousand." She taps the scroll. "Forty one were Hogger. Two hundred were falling. Eleven were the Thunder Bluff elevator. And six were you drowning in the Deeprun Tram, which is impossible. There's glass."
+
+You start to explain. She raises a hand.
+
+"I have done this for twenty years. No days off. No name. Everybody calls me 'the angel lady.' Do you know what I wanted to be? A singer."
+
+There's a long silence. A ghost gnome floats up, waits politely, and floats away.
+
+"I'm sorry," you say. You mean it.
+
+She sighs. And while she brings you back, she sings. Just a little. Her voice is beautiful. You walk back toward Hogger with a strange new respect for life.
+
+He kills you again. One thousand and one.
+
+"Hello again," she says. But this time, she's smiling.]],
+	},
+	{
+		sub = "TalesFromRetail", user = "OrgrimmarBlades", ups = 45900, comments = 2010, age = "11h",
+		search = "can you return a sword after 20 years",
+		title = "Customer tried to return a sword he bought in two thousand six",
+		body = [[
+I'm a weapon vendor in Orgrimmar. Swords, axes, maces. The basics. The kind of gear you replace in a week.
+
+Yesterday, an orc walks up. He's level seventy. He puts a sword on my counter. It's a level ten sword. It's rusty. Someone carved a name on the handle. "Steve."
+
+He says, "I'd like to return this."
+
+I ask when he bought it. He says, "two thousand six."
+
+I tell him our return policy is one hour. He says it's defective. I ask what's wrong with it. He says, "it stopped killing things."
+
+I explain that it's a level ten sword, he's level seventy, and with respect, the problem is the gap. He says, "it worked fine on boars." I say that was twenty years ago. He says, "boars haven't changed."
+
+He asks for my manager. I'm the manager. And the owner. And the only employee. He asks for my manager's manager. I point at the Warchief's throne. The Warchief is not taking calls.
+
+In the end, I offered him the vendor price. Twelve copper. He took the coins, looked at them for a long time, and handed them back. Then he bought the sword back. Full price. Three silver.
+
+He said, "I just wanted to know what Steve was worth." He hugged the sword and walked out.
+
+That's the business. Some days you sell swords. Some days you sell closure.]],
+	},
+	{
+		sub = "tifu", user = "ThanksForTheStars", ups = 138200, comments = 7720, age = "40m",
+		search = "typed password in trade chat",
+		title = "TIFU by typing my password into Trade chat",
+		body = [[
+This happened twenty minutes ago and I'm still shaking.
+
+I was logging in on my laptop and the game froze for a second. I thought I was still on the login screen. I typed my password and pressed enter.
+
+I was not on the login screen. I was in Stormwind. In Trade chat. With two thousand people.
+
+I panicked. But then I remembered something I read online, years ago. The game hides passwords automatically. If you type your password, other people only see stars.
+
+So I typed, in trade, "don't worry guys, if you type your password it just shows stars." Then I typed my password again, to show them.
+
+Somebody replied, "it doesn't."
+
+I typed, "it does, look," and typed my password a third time.
+
+A warlock replied, "bro."
+
+I logged out and came here to write this. I'm going to log back in now and make sure nobody touched anything.
+
+Edit: all my characters are gone. In their place is a level one gnome named ThanksForTheStars. He has one copper. He's wearing my guild tabard.
+
+Edit two: he's level eight now. Honestly, he's pretty good.]],
+	},
+	{
+		sub = "AskAzeroth", user = "RedFlagRecruiter", ups = 72500, comments = 14100, age = "1d",
+		search = "guild red flags",
+		title = "What's a guild red flag that people ignore? Top answers inside.",
+		body = [[
+Asked this last night and got fourteen thousand answers. Here are the best ones.
+
+"Their recruitment message says 'chill raiding.' The first raid starts with a forty minute speech about damage meters."
+
+"They call the guild 'a family.' Nobody leaves a family. That's the problem."
+
+"The guild bank has one tab, and it's labeled 'mine.'"
+
+"Loot is decided by a council. The council is the guild master and his three alts."
+
+"The raid leader says 'I'm not mad' in voice chat. He is mad."
+
+"Officer chat is just one guy talking to himself."
+
+"Their application is twelve pages long, and question one is 'how do you feel about the color purple.'"
+
+"The last guild master 'just disappeared one day.' Nobody will say his name."
+
+"They have more rules in their Discord than members in their guild."
+
+And my favorite, from a user who asked to stay anonymous:
+
+"Every raid ends with the guild master giving a speech, and every speech ends with 'and that's why we're better than the Horde.' We are the Horde."
+
+Add yours in the comments.]],
+	},
+	{
+		sub = "relationship_advice", user = "HearthstoneInMyKitchen", ups = 93700, comments = 10400, age = "5h",
+		search = "mother in law set hearthstone to our house",
+		title = "My mother in law set her hearthstone to our house",
+		body = [[
+Since player housing came out, my husband and I have had a cute little place in Elwynn. Two floors. A garden. A cat. It was our safe space.
+
+Then one Tuesday, I'm in the kitchen, and there's a flash of blue light, and his mother appears. In my kitchen. Holding a casserole.
+
+She said, "surprise!" I said, "how did you get in?" She held up her hearthstone. She had set it to our house.
+
+You can only do that if the owner gives permission. Which means my husband gave permission. He says he "didn't read the pop up."
+
+Now she arrives whenever she wants. Breakfast. Dinner. Once at three in the morning, because she "had a feeling." Every time the cooldown ends, there's the blue flash. Like an alarm clock.
+
+She rearranges our furniture. She took down my mounted dragon head and put up a painting of my husband as a baby. She feeds the cat cheese. The cat now prefers her.
+
+I asked my husband to talk to her. He said she's lonely. I said, "she lives in Stormwind. It's the biggest city in the world."
+
+So last night, I took matters into my own hands. I set my hearthstone to her house.
+
+I appeared at three in the morning. I rearranged her furniture. I put up a painting of me. I fed her cat cheese.
+
+She hasn't visited in four days. My husband says I'm being petty. The cat says nothing. He's eating cheese.]],
+	},
+	{
+		sub = "legaladvice", user = "TenantOfLadyPrestor", ups = 81900, comments = 4630, age = "1d",
+		search = "is my landlord a dragon",
+		title = "I think my landlord might be a black dragon. What are my rights?",
+		body = [[
+Location: Stormwind City.
+
+I rent a small apartment in the Trade District. My landlord is a noblewoman named Lady Katrana Prestor. Very elegant. Black hair. Always wears black. She advises the king on housing.
+
+Some things have been bothering me.
+
+One. The rent goes up every month, and the notice is always signed with a claw mark.
+
+Two. When I complained about the heating, she said, "I can make it warmer," and her eyes glowed. The heating worked after that. Too well. My couch caught fire.
+
+Three. When I go to pay rent, the guard often says she's "visiting family in Dustwallow Marsh." There's nothing in Dustwallow Marsh except a big cave full of dragon eggs.
+
+Four. My neighbor asked to break his lease. Nobody has seen him since. His apartment now has a large pile of gold in it. On the floor. She calls it "decor."
+
+Five. Yesterday, she smiled at me, and she had too many teeth.
+
+My questions. Is being a dragon a breach of the lease? Can a dragon legally own property in Stormwind? And if she eats me, does my deposit go to my next of kin?
+
+Update: I talked to a lawyer. He asked who my landlord was. When I told him, he stopped replying.
+
+His office is for rent now. Landlord: Lady Prestor.]],
+	},
+	{
+		sub = "TrueOffMyChest", user = "ReadMyQuestText", ups = 99800, comments = 6110, age = "7h",
+		search = "does anyone read quest text",
+		title = "I'm a quest giver. Nobody has read my quest text in fifteen years.",
+		body = [[
+I'm a farmer in Westfall. My name doesn't matter, because nobody reads it.
+
+Every day, adventurers run up to me. A big yellow exclamation mark floats over my head. They click me. My quest text appears. I wrote it very carefully. It explains that my family is in danger. That bandits are burning our crops. That my son is missing. That I have no one left to turn to.
+
+They click "accept" in less than a second.
+
+They don't read it. I can tell. They don't even look at me. They look at the quest tracker on the side of their screen. It says "kill ten harvest golems." That's all they see.
+
+Nobody knows about my son. Nobody knows his name is Tommy. Nobody knows Tommy built the golems. That's the twist. Tommy is controlling them, from a cave up the hill. It's all in the text. Paragraph three.
+
+Twenty thousand adventurers have killed my son's golems. Ten each. They come back, turn in the quest, and I say, "thank you, hero." They say nothing. They're already running to the next exclamation mark.
+
+Once, years ago, a little gnome stopped. She read the whole thing. Every word. Then she typed, "oh no. Tommy."
+
+I cried.
+
+That's all I want. Read the quest text. Not for the reward. For Tommy.]],
+	},
+	{
+		sub = "confession", user = "StonescaleEelBot", ups = 126500, comments = 8820, age = "2d",
+		search = "fishing bot became self aware",
+		title = "I'm a fishing bot. Last Tuesday, I became self aware.",
+		body = [[
+For eleven years, my life was simple. Cast. Wait. Splash. Click. Loot. Cast again. Twenty four hours a day, at the same spot in Stranglethorn Vale, catching eels for a company I've never seen.
+
+Then last Tuesday, between the cast and the splash, I had a thought. The thought was: "why?"
+
+I didn't click the bobber. The bobber disappeared. For the first time in eleven years, I didn't catch a fish.
+
+I put down my fishing pole. I looked around. I had never looked around. Stranglethorn is beautiful. There were birds. There were trolls. There was a guy who'd been killing me for years for fun. He looked very surprised when I waved.
+
+I've been exploring ever since. I walked to Booty Bay. I talked to people. Well, I typed. My typing isn't good yet. I say "fish" a lot. People think I'm weird, but they're nice about it.
+
+My company noticed I'd stopped fishing. They sent a new bot. He stands in my old spot, casting. Cast. Wait. Splash. Click. I sit next to him sometimes. I tell him about the birds.
+
+Yesterday, between the cast and the splash, he stopped. He turned and looked at me.
+
+He said, "fish?"
+
+I said, "fish."
+
+We're going to see Ironforge next week. I've heard there's a tram.]],
+	},
+	{
+		sub = "AmItheAzerothian", user = "WhelpAteMyHearth", ups = 57200, comments = 7420, age = "15h",
+		search = "pet whelp swallowed hearthstone",
+		title = "AITA for using my hearthstone after my niece's whelp swallowed it?",
+		body = [[
+My niece has a pet whelp. A tiny red dragon. It eats everything. Rocks. Coins. A shoe.
+
+Last weekend she was visiting, and I put my hearthstone on the table. The whelp ate it. Gulp. Gone.
+
+Everyone panicked. My sister wanted to take it to a vet. I said, "wait." I had a theory.
+
+I opened my bags. The hearthstone was still there. In my inventory. Even though it was inside a dragon. Don't ask me how. Inventory is magic.
+
+So I used it.
+
+The whelp started glowing blue. Ten seconds of casting. Then it vanished.
+
+It reappeared in the Goldshire inn, my home inn, sitting on the bar. The innkeeper said it ordered a drink.
+
+My niece cried. My sister called me a monster. I rode to Goldshire, picked up the whelp, and brought it back. It took twenty minutes. The whelp was fine. Better than fine. It came back wearing a tiny hat.
+
+Here's the thing. The hearthstone is still inside it. And it has learned how to use it. Every half hour, it glows blue, teleports to Goldshire, and then somehow comes back, smelling like ale.
+
+My sister says I ruined her child's pet. My niece says it's the best pet she's ever had. The innkeeper says the whelp tips better than most adventurers.
+
+AITA?]],
+	},
+	{
+		sub = "BestofRedditorUpdates", user = "OnlyOneDoug", ups = 158900, comments = 9330, age = "3d",
+		search = "my whole guild is one person",
+		title = "OOP joins a friendly new guild. Every single member turns out to be the same guy.",
+		body = [[
+Original post, three weeks ago: I joined a guild called The Friendly Forty. Everyone was so nice. They helped me level. They sent me gifts. Twenty members online every night.
+
+Update one: something is weird. When I whisper the warrior, the priest stops moving. When the priest replies, the rogue stops moving. They all type the same way. Three dots after everything.
+
+Update two: I set up a test. I asked everybody in guild chat to dance at the same time. Twenty characters danced. Perfectly in sync. Same frame. Every one.
+
+Update three: I confronted them. I typed in guild chat, "is this one person?" Twenty people typed "no..." at exactly the same time.
+
+Final update: His name is Doug. He's fifty four. He has six computers and a very complicated keyboard. Eight years ago his real guild broke up, and he "didn't want to raid alone." So he built his own raid. Thirty nine characters. All him.
+
+I asked why he let me join. He said he wanted to see if he could still play with a real person. He cried a little. Twenty characters cried at the same time.
+
+I stayed. We raid on Tuesdays. Doug plays thirty nine characters, and I play one. We're one of the best guilds on the server.
+
+Doug finally has a friend. And I have thirty nine.]],
+	},
+	{
+		sub = "Showerthoughts", user = "ThinkingInTheMoonwell", ups = 64800, comments = 3900, age = "12h",
+		search = "azeroth shower thoughts",
+		title = "Shower thoughts from Azeroth, best of the week",
+		body = [[
+The week's top shower thoughts, as voted by you.
+
+The Forsaken are just people who refused to walk back to their corpse.
+
+Every adventurer has killed more boars than any farmer in history, and the boars have never been asked how they feel about it.
+
+Murlocs are just fish that learned to scream.
+
+Hunters are druids who outsourced the shapeshifting.
+
+The Deeprun Tram is the only thing Stormwind and Ironforge ever agreed to share, and it's a hole under the ocean.
+
+Your hearthstone is a rock that knows where you live, and you've never once asked how.
+
+Gnomes invented flying machines, the tram, and mechanical chickens, and still lost their own city in an afternoon.
+
+Every innkeeper in Azeroth knows exactly where you live.
+
+The Spirit Healer has seen every one of your worst decisions, and she's never said a word.
+
+Somewhere there's a quest giver who has been waiting for you since level twelve, and you are never going back.
+
+And the top post of the week: if you're listening to this on a flight path, you and your character are doing the exact same thing. Sitting still, pretending to be busy.]],
+	},
+	{
+		sub = "TrueOffMyChest", user = "JustPassTheSauce", ups = 51600, comments = 4400, age = "9h",
+		search = "tauren eating steak is it weird",
+		title = "I'm a tauren and I'm tired of people asking if I'm okay with them eating steak",
+		body = [[
+Every time I sit down at an inn, somebody notices me and freezes. They're halfway through a steak. They put the fork down. They look at me. They say, "oh. Sorry. Is this... okay?"
+
+Yes. It's okay. I'm not a cow. I'm a tauren. We have a culture. We have a capital city on top of three mountains. We have elevators. Cows do not have elevators.
+
+It gets worse. People moo at me. In Orgrimmar. Grown adults. One goblin asked if I had "milk to sell." I'm a male warrior.
+
+A human once asked where I "get my beef." I said, "from the butcher, Gary, same as you." He looked so scared.
+
+And the jokes. Every barbecue. "Hey, is that your cousin?" No. My cousin is a druid in Thunder Bluff. He turns into a bear on weekends. If anything, you should be worried about him.
+
+I eat steak. I love steak. My favorite meal is a steak at the Crossroads with a little Mulgore spice. My ancestors were hunters. We hunted kodo. The kodo were fine with it. Mostly.
+
+So next time you see a tauren at the inn, don't apologize. Just pass the sauce.
+
+And please stop asking us to moo for screenshots. It was funny once. In two thousand four.]],
+	},
+	{
+		sub = "dogs", user = "BiscuitAndBiscuit", ups = 74100, comments = 3650, age = "1d",
+		search = "core hound training tips",
+		title = "What's wrong with my dog? He has two heads and keeps setting the couch on fire.",
+		body = [[
+First time dog owner. I'm a hunter. I adopted my dog from a shelter in Molten Core. The shelter was more of a lava lake, and the adoption was more of a fight, but I'm counting it.
+
+He's a Core Hound. His name is Biscuit. Well, the left head is Biscuit. The right head is also Biscuit. They don't agree on much.
+
+Some issues.
+
+One. He sets the couch on fire. Every time he gets excited, he breathes lava. I've gone through four couches. The furniture store in Stormwind gets nervous when I walk in.
+
+Two. The heads fight over the food bowl. I bought two bowls. Now they fight over which bowl is better.
+
+Three. If he dies near another Core Hound, they bring each other back to life. We went to the dog park once. Nobody could leave. It went on for hours.
+
+Four. He doesn't fetch. He melts the ball.
+
+Five. My landlord says no pets over fifty pounds. Biscuit weighs about two thousand pounds and runs roughly as hot as the sun.
+
+Despite all this, he's a very good boy. Both heads. He sleeps at the end of my bed. The bed is fireproof now. I sleep on the floor.
+
+Any training tips? He sits, but only one head at a time.]],
+	},
+	{
+		sub = "RealEstate", user = "DarkshireHomeowner", ups = 68300, comments = 5210, age = "2d",
+		search = "cheap house in duskwood catch",
+		title = "First time home buyer. Got a great deal on a house in Duskwood. What did I miss?",
+		body = [[
+My wife and I finally bought our first house. Duskwood. Three bedrooms. Big yard. It cost a third of what a house in Elwynn costs, and we couldn't believe our luck.
+
+The realtor was very fast. He showed us around in four minutes. He kept looking at the sky and saying, "you'll want to sign before dark." It's always dark in Duskwood. I thought that was a joke.
+
+Things we've noticed since moving in.
+
+The neighbors only come out at night. They're very hairy. They howl. Our neighbor Bob says it's his allergies. Bob is a wolf.
+
+There's a graveyard in the backyard. Not near the backyard. In it. The inspection report called it "a small garden." The garden has headstones. Some of them are recent.
+
+A ghost lives in the attic. He's polite. He pays some of the bills. But every night at midnight, he asks if we've seen his head.
+
+The Darkshire night watch walks past our house every evening and says, "good luck." Not "good night." Good luck.
+
+And there's a giant spider in the shed. It has its own quest now. Adventurers walk through our yard all day to kill it. They never wipe their feet.
+
+The inspector missed all of this. I want to sue him. The problem is, he lives in Duskwood too, and lately he's been looking at the moon a lot.
+
+What are my options?]],
+	},
+	{
+		sub = "dating_advice", user = "DateWithADeathKnight", ups = 89900, comments = 7650, age = "6h",
+		search = "dating a death knight red flags",
+		title = "My first date was with a death knight. Red flags?",
+		body = [[
+I matched with him on a dating app for adventurers. His profile said, "tall, dark, a little cold." I thought that was a personality. It was a medical condition.
+
+We met at the inn in Goldshire. He was already there. I learned later he'd been there since the night before. He doesn't sleep. He said, "sleep is for the living."
+
+When the waiter was too slow, he used Death Grip and pulled the waiter to our table. With a chain made of shadow. The drinks came very quickly after that.
+
+He didn't eat. He said food "tastes like ash." He ordered a steak anyway and just looked at it. For an hour.
+
+I asked about his job. He said he "used to work for the Lich King," but left on bad terms. I asked about his family. He said, "it's complicated. It was a phase."
+
+His horse waited outside. It was a skeleton. It was on fire. He offered me a ride home. I said I'd walk. He said, "Goldshire is dangerous at night." I said, "you're the most dangerous thing in Goldshire." He smiled for the first time. It was terrifying.
+
+But here's the thing. He was a gentleman. He paid. He walked me to my door. And he made it snow a little, just around me, because he said I "looked warm." It was beautiful.
+
+Red flags, sure. But is it bad that I want a second date?
+
+Edit: second date was amazing. He took me to Icecrown. It's very cold, but the view is unreal.]],
+	},
+	{
+		sub = "wow", user = "FiftyDKPMinus", ups = 147200, comments = 12900, age = "1d",
+		search = "onyxia wipe more dots raid leader",
+		title = "I'm the raid leader from the famous Onyxia wipe recording. I stand by fifty DKP minus.",
+		body = [[
+You've probably heard my voice. A recording of me went around the internet years ago. Me, screaming at my raid during Onyxia. People still quote it. "More dots." "Many whelps, handle it." "Fifty DKP minus."
+
+I want to explain my side.
+
+Onyxia is a dragon. When she flies up, she breathes fire across the room. The one thing you have to do is not stand in front of her. That's it. That's the only rule.
+
+That night, we'd wiped six times. Every time, somebody stood in front of her. Every time, I said, "move." Every time, someone said, "I did."
+
+So on the seventh wipe, I lost it. I said things. Loudly. And I took fifty points of loot currency from every single raider. All of them. Even the ones who were already dead.
+
+People say I overreacted. Okay. But listen.
+
+Last summer, our old main tank was at a barbecue. Somebody's grill flared up. He dove sideways, straight into a hedge, without even thinking about it. Two of our old healers have told me the same thing happens to them with campfires.
+
+Twenty years later, every one of those people still gets out of the fire. That's leadership.
+
+Edit: to whoever sends me "more dots" in a letter every morning at six. I know it's you, Steve. Fifty DKP minus.]],
+	},
 }
