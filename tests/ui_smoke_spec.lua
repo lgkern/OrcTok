@@ -7,7 +7,7 @@ local H = dofile("tests/helpers.lua")
 describe("UI smoke", function()
 	local mock, ns, created
 
-	local NUMBERS = { GetHeight = 480, GetWidth = 270, GetStringWidth = 120, GetStringHeight = 34, GetFrameLevel = 1, GetValue = 0 }
+	local NUMBERS = { GetHeight = 480, GetWidth = 270, GetStringWidth = 120, GetStringHeight = 34, GetFrameLevel = 1, GetValue = 0, GetEffectiveScale = 1 }
 	local CHILDREN = { TitleText = true }
 
 	local function widget(kind)
@@ -56,6 +56,9 @@ describe("UI smoke", function()
 		_G.CreateColor = function(r, g, b, a) return { r = r, g = g, b = b, a = a } end
 		_G.SetPortraitTexture = function() end
 		_G.PlaySound = function() end
+		_G.cursorY, _G.shiftDown = 100, false
+		_G.GetCursorPosition = function() return 50, _G.cursorY end
+		_G.IsShiftKeyDown = function() return _G.shiftDown end
 		_G.SOUNDKIT = {}
 		_G.DEFAULT_CHAT_FRAME = { AddMessage = function() end }
 		_G.SlashCmdList = {}
@@ -119,10 +122,44 @@ describe("UI smoke", function()
 		local root = ns.Session.phone.root
 		root._scripts.OnEnter(root)
 		root._scripts.OnLeave(root)
-		root._scripts.OnDragStop(root)
+		-- Shift-drag moves and saves the position.
+		_G.shiftDown = true
+		root._scripts.OnMouseDown(root, "LeftButton")
+		root._scripts.OnMouseUp(root, "LeftButton")
 		assert.same({ "CENTER", "CENTER", 1, 2 }, ns.db.point)
+		_G.shiftDown = false
 		root._scripts.OnMouseUp(root, "RightButton")
 		assert.is_false(ns.Session.active)
+	end)
+
+	it("a long upward drag slides to the next story; a short one springs back", function()
+		_G.SlashCmdList.ORCTOK("")
+		local phone = ns.Session.phone
+		local root = phone.root
+		local first = phone.scene.sim
+
+		-- Short, slow drag: springs back, same story.
+		local story = ns.Session.utts
+		_G.cursorY = 100
+		root._scripts.OnMouseDown(root, "LeftButton")
+		for _ = 1, 20 do _G.cursorY = _G.cursorY + 1; tick(root, 1) end
+		root._scripts.OnMouseUp(root, "LeftButton")
+		tick(root, 30)
+		assert.equal(0, phone.offset)
+		assert.equal(story, ns.Session.utts)
+
+		-- Long drag: content follows the cursor, then slides out.
+		local nextStory = phone.peekNext()
+		_G.cursorY = 100
+		root._scripts.OnMouseDown(root, "LeftButton")
+		for _ = 1, 30 do _G.cursorY = _G.cursorY + 6; tick(root, 1) end
+		assert.equal(180, phone.offset)
+		root._scripts.OnMouseUp(root, "LeftButton")
+		tick(root, 60)
+		assert.equal(0, phone.offset)
+		assert.are_not.equal(story, ns.Session.utts)
+		assert.equal(table.concat(ns.Text.words(nextStory.title), " "), ns.Session.utts[1].plain)
+		assert.are_not.equal(first, phone.scene.sim) -- fresh course
 	end)
 
 	it("slash commands all run", function()

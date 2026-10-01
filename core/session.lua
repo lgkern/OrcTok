@@ -37,6 +37,11 @@ function Session.ensurePhone()
 		local phone = ns.Phone.create(Session.db)
 		phone.onClose = function() Session.Stop() end
 		phone.onTick = function(elapsed) Session.tick(elapsed) end
+		phone.onSwipeNext = function() Session.Skip() end
+		phone.peekNext = function()
+			local story = ns.Playlist.peek(Session.db, ns.Stories, Session.rng)
+			if story then return story, Session.meta(story) end
+		end
 		Session.phone = phone
 	end
 	return Session.phone
@@ -53,11 +58,15 @@ function Session.voice()
 	return voices[1].voiceID
 end
 
--- Card/rail numbers: the story's own values, or plausible random ones.
+-- Card/rail numbers: the story's own values, or plausible random ones. Cached
+-- per story, so the swipe preview card and the real one show the same numbers.
+local metaCache = {}
+
 function Session.meta(story)
+	if metaCache[story.title] then return metaCache[story.title] end
 	local rng = Session.rng
 	local ups = story.ups or rng:int(2000, 150000)
-	return {
+	metaCache[story.title] = {
 		sub = story.sub or "wow",
 		user = story.user or rng:pick(USERS),
 		age = story.age or rng:pick(AGES),
@@ -65,6 +74,7 @@ function Session.meta(story)
 		comments = story.comments or math.floor(ups * rng:range(0.03, 0.12)),
 		awards = rng:int(3, 60),
 	}
+	return metaCache[story.title]
 end
 
 function Session.Start(reason)
@@ -117,10 +127,12 @@ function Session.Toggle()
 	if Session.active then Session.Stop() else Session.Start("manual") end
 end
 
+-- Next story, like the next video: a fresh course and sky too.
 function Session.Skip()
 	if not Session.active then return end
 	Session.token = Session.token + 1
 	Session.narrator:stop()
+	Session.phone.scene:Start(Session.rng:int(1, 2147483646))
 	Session.PlayNext()
 end
 

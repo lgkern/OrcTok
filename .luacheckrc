@@ -14,6 +14,7 @@ read_globals = {
 	"UnitOnTaxi", "IsMacClient", "issecretvalue",
 	"C_VoiceChat", "C_TTSSettings", "Enum",
 	"CreateColor", "SetPortraitTexture", "PlaySound", "SOUNDKIT",
+	"GetCursorPosition", "IsShiftKeyDown",
 }
 
 ignore = {

@@ -3,6 +3,12 @@
 -- Layers, bottom to top: scene background + ModelScene (ui/scene.lua), then an
 -- overlay with the search bar, game HUD, post card, captions, right rail,
 -- creator info, bouncing watermark and progress bar.
+--
+-- Swipe: everything above lives in `content`, which follows the cursor when you
+-- drag up. A "next video" panel trails below it, showing the next story's post
+-- card (every story opens on that card, so the hand-off is seamless). Release
+-- far enough, or flick, and the content slides out and the next story starts.
+-- Shift-drag moves the phone instead.
 local _, ns = ...
 
 local Text = ns.Text
@@ -12,6 +18,16 @@ Phone.__index = Phone
 
 Phone.W, Phone.H = 270, 480
 Phone.HANDLE = "@storytimez_zugzug"
+
+Phone.SWIPE_COMMIT = 0.25   -- release past this fraction of the height → next story
+Phone.SWIPE_FLICK = 900     -- or an upward flick faster than this (px/s)
+Phone.SWIPE_RUBBER = 30     -- how far a downward drag may pull, in px
+
+-- Pure: does a swipe released after dy px of upward travel, moving at
+-- velocity px/s, go to the next story?
+function Phone.SwipeCommits(dy, velocity, h)
+	return dy > h * Phone.SWIPE_COMMIT or (dy > 20 and velocity > Phone.SWIPE_FLICK)
+end
 
 local FONT = "Fonts\\ARIALN.TTF"
 
@@ -77,36 +93,54 @@ function Phone.create(db)
 	root:SetClipsChildren(true)
 	root:SetMovable(true)
 	root:EnableMouse(true)
-	root:RegisterForDrag("LeftButton")
 	root:SetBackdrop({ edgeFile = "Interface\\Buttons\\WHITE8x8", edgeSize = 3 })
 	root:SetBackdropBorderColor(0, 0, 0, 1)
 	root:Hide()
 	self.root = root
 	self:RestorePosition()
 
-	root:SetScript("OnDragStart", root.StartMoving)
-	root:SetScript("OnDragStop", function(f)
-		f:StopMovingOrSizing()
-		local point, _, relPoint, x, y = f:GetPoint()
-		db.point = { point, relPoint, x, y }
+	root:SetScript("OnMouseDown", function(f, button)
+		if button ~= "LeftButton" then return end
+		if IsShiftKeyDown() then
+			self.moving = true
+			f:StartMoving()
+		else
+			self:BeginSwipe()
+		end
 	end)
-	root:SetScript("OnMouseUp", function(_, button)
-		if button == "RightButton" and self.onClose then self.onClose() end
+	root:SetScript("OnMouseUp", function(f, button)
+		if self.moving then
+			self.moving = false
+			f:StopMovingOrSizing()
+			local point, _, relPoint, x, y = f:GetPoint()
+			db.point = { point, relPoint, x, y }
+		elseif self.swipe then
+			self:EndSwipe()
+		elseif button == "RightButton" and self.onClose then
+			self.onClose()
+		end
 	end)
 	root:SetScript("OnEnter", function(f)
 		GameTooltip:SetOwner(f, "ANCHOR_LEFT")
 		GameTooltip:AddLine("OrcTok")
-		GameTooltip:AddLine("Drag to move. Right-click to close.", 1, 1, 1)
+		GameTooltip:AddLine("Drag up for the next story.", 1, 1, 1)
+		GameTooltip:AddLine("Shift-drag to move. Right-click to close.", 1, 1, 1)
 		GameTooltip:AddLine("/orctok for options.", 0.7, 0.7, 0.7)
 		GameTooltip:Show()
 	end)
 	root:SetScript("OnLeave", function() GameTooltip:Hide() end)
 
-	self.scene = ns.Scene.create(root, db.tune)
+	-- Everything that swipes away lives in content; root clips it.
+	local content = CreateFrame("Frame", nil, root)
+	content:SetSize(W, H)
+	self.content = content
+	self:SetOffset(0)
 
-	local ov = CreateFrame("Frame", nil, root)
-	ov:SetAllPoints(root)
-	ov:SetFrameLevel(root:GetFrameLevel() + 10)
+	self.scene = ns.Scene.create(content, db.tune)
+
+	local ov = CreateFrame("Frame", nil, content)
+	ov:SetAllPoints(content)
+	ov:SetFrameLevel(content:GetFrameLevel() + 10)
 	self.ov = ov
 
 	self:BuildSearch(ov, W)
@@ -117,6 +151,7 @@ function Phone.create(db)
 	self:BuildCreator(ov, W)
 	self:BuildWatermark(ov)
 	self:BuildProgress(ov)
+	self:BuildNextPanel(root, content, W, H)
 
 	root:SetScript("OnUpdate", function(_, elapsed) self:OnUpdate(elapsed) end)
 	return self
@@ -179,6 +214,11 @@ end
 
 -- The Reddit post card shown while the title is read.
 function Phone:BuildCard(ov, W, H)
+	self.card = Phone.NewCard(ov, W, H)
+	self.card.frame:Hide()
+end
+
+function Phone.NewCard(ov, W, H)
 	local card = CreateFrame("Frame", nil, ov)
 	card:SetPoint("CENTER", 0, H * 0.06)
 	card:SetWidth(W - 34)
@@ -230,8 +270,29 @@ function Phone:BuildCard(ov, W, H)
 	share:SetPoint("LEFT", comments, "RIGHT", 14, 0)
 	share:SetText("Share")
 
-	card:Hide()
-	self.card = { frame = card, sub = sub, meta = meta, title = title, ups = ups, comments = comments, awards = awardCount }
+	return { frame = card, sub = sub, meta = meta, title = title, ups = ups, comments = comments, awards = awardCount }
+end
+
+function Phone.FillCard(c, story, meta)
+	c.sub:SetText("r/" .. meta.sub)
+	c.meta:SetText("u/" .. meta.user .. "  ·  " .. meta.age)
+	c.title:SetText(story.title)
+	c.ups:SetText(Text.count(meta.ups))
+	c.comments:SetText(Text.count(meta.comments))
+	c.awards:SetText(tostring(meta.awards))
+	c.frame:SetHeight(26 + 10 + 19 + 16 + c.title:GetStringHeight() + 10 + 12 + 12)
+end
+
+-- The "next video" waiting below the current one: dark backdrop + its post card.
+function Phone:BuildNextPanel(root, content, W, H)
+	local panel = CreateFrame("Frame", nil, root)
+	panel:SetSize(W, H)
+	panel:SetPoint("TOPLEFT", content, "BOTTOMLEFT")
+	panel:SetFrameLevel(content:GetFrameLevel() + 20)
+	local bg = rect(panel, 0.06, 0.06, 0.08, 1, "BACKGROUND")
+	bg:SetAllPoints()
+	self.nextCard = Phone.NewCard(panel, W, H)
+	self.nextPanel = panel
 end
 
 -- TikTok right rail: creator avatar, like, comment, save, share, spinning disc.
@@ -360,19 +421,16 @@ end
 -- ----- state -----------------------------------------------------------------
 
 function Phone:Show() self.root:Show() end
-function Phone:Hide() self.root:Hide() end
+function Phone:Hide()
+	self.swipe, self.anim, self.moving = nil, nil, false
+	self:SetOffset(0)
+	self.root:Hide()
+end
 function Phone:IsShown() return self.root:IsShown() end
 
 -- meta: { sub, user, age, ups, comments } with defaults already filled
 function Phone:SetStory(story, meta)
-	local c = self.card
-	c.sub:SetText("r/" .. meta.sub)
-	c.meta:SetText("u/" .. meta.user .. "  ·  " .. meta.age)
-	c.title:SetText(story.title)
-	c.ups:SetText(Text.count(meta.ups))
-	c.comments:SetText(Text.count(meta.comments))
-	c.awards:SetText(tostring(meta.awards))
-	c.frame:SetHeight(26 + 10 + 19 + 16 + c.title:GetStringHeight() + 10 + 12 + 12)
+	Phone.FillCard(self.card, story, meta)
 
 	self.searchText:SetText("Find related content  ·  " .. (story.search or "wow storytime"))
 	self.likes, self.liked = meta.ups, false
@@ -421,8 +479,80 @@ function Phone:SetProgress(el, total)
 	self.clock:SetText(Text.clock(el) .. "/" .. Text.clock(total))
 end
 
+-- ----- swipe ------------------------------------------------------------------
+
+-- Positive offset = content pushed up.
+function Phone:SetOffset(y)
+	self.offset = y
+	self.content:SetPoint("TOPLEFT", self.root, "TOPLEFT", 0, y)
+end
+
+function Phone:CursorY()
+	local _, y = GetCursorPosition()
+	return y / self.root:GetEffectiveScale()
+end
+
+function Phone:BeginSwipe()
+	if self.anim then return end
+	local y = self:CursorY()
+	self.swipe = { startY = y, lastY = y, velocity = 0 }
+	local story, meta
+	if self.peekNext then story, meta = self.peekNext() end
+	self.nextCard.frame:SetShown(story ~= nil)
+	if story then Phone.FillCard(self.nextCard, story, meta) end
+end
+
+function Phone:UpdateSwipe(elapsed)
+	local sw = self.swipe
+	local y = self:CursorY()
+	if elapsed > 0 then
+		sw.velocity = 0.6 * (y - sw.lastY) / elapsed + 0.4 * sw.velocity
+	end
+	sw.lastY = y
+	local dy = y - sw.startY
+	if dy < 0 then dy = -math.min(Phone.SWIPE_RUBBER, -dy * 0.3) end
+	self:SetOffset(dy)
+end
+
+function Phone:EndSwipe()
+	local sw = self.swipe
+	self.swipe = nil
+	if Phone.SwipeCommits(self.offset, sw.velocity, Phone.H) then
+		self:Animate(Phone.H, function()
+			if self.onSwipeNext then self.onSwipeNext() end
+			self:SetOffset(0)
+		end)
+	else
+		self:Animate(0)
+	end
+end
+
+-- Ease-out slide of the content to offset `to`; then calls done.
+function Phone:Animate(to, done)
+	local from = self.offset
+	local dur = 0.08 + 0.22 * math.abs(to - from) / Phone.H
+	self.anim = { from = from, to = to, t = 0, dur = dur, done = done }
+end
+
+function Phone:UpdateAnim(elapsed)
+	local a = self.anim
+	a.t = a.t + elapsed
+	local k = math.min(1, a.t / a.dur)
+	local e = 1 - (1 - k) ^ 3
+	self:SetOffset(a.from + (a.to - a.from) * e)
+	if k >= 1 then
+		self.anim = nil
+		if a.done then a.done() end
+	end
+end
+
 function Phone:OnUpdate(elapsed)
 	self.t = self.t + elapsed
+	if self.swipe then
+		self:UpdateSwipe(elapsed)
+	elseif self.anim then
+		self:UpdateAnim(elapsed)
+	end
 	self.disc:SetRotation(-self.t * 1.8)
 	-- Ticker scroll: the text is doubled, so wrapping at half its width is seamless.
 	local half = self.soundText:GetStringWidth() / 2

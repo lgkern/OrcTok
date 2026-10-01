@@ -137,6 +137,18 @@ describe("Session + triggers", function()
 		assert.equal(ns.Text.words(phone.story.title)[2], phone.caption)
 	end)
 
+	it("swiping up plays the previewed story, with the previewed numbers, on a fresh course", function()
+		slash("")
+		local first = phone.story
+		local nextStory, nextMeta = phone.peekNext()
+		assert.are_not.equal(first.title, nextStory.title)
+		phone.onSwipeNext()
+		assert.equal(nextStory, phone.story)
+		assert.equal(nextMeta, phone.meta)
+		assert.equal(2, phone.scene.starts)
+		assert.is_true(phone.card) -- the new story opens on its post card
+	end)
+
 	it("right-click close stops the session", function()
 		slash("")
 		phone.onClose()
