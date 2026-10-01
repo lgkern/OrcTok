@@ -47,15 +47,16 @@ function Session.ensurePhone()
 	return Session.phone
 end
 
--- The TTS voice to use, or nil when the client has none (captions only).
+-- The TTS voice for the next story: the player's pick (/orctok voice <n>), or
+-- a random installed voice per story. nil when the client has none (captions only).
 function Session.voice()
 	local voices = C_VoiceChat.GetTtsVoices() or {}
 	if #voices == 0 then return nil end
-	local want = Session.db.voiceID or C_TTSSettings.GetVoiceOptionID(Enum.TtsVoiceType.Standard)
+	local want = Session.db.voiceID
 	for _, v in ipairs(voices) do
 		if v.voiceID == want then return want end
 	end
-	return voices[1].voiceID
+	return Session.rng:pick(voices).voiceID
 end
 
 -- Card/rail numbers: the story's own values, or plausible random ones. Cached

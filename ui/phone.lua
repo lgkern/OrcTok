@@ -163,7 +163,9 @@ function Phone:RestorePosition()
 	if p then
 		root:SetPoint(p[1], UIParent, p[2], p[3], p[4])
 	else
-		root:SetPoint("RIGHT", UIParent, "RIGHT", -260, 40)
+		-- Anchored off the screen centre, not the right edge, so ultrawide
+		-- monitors don't push it to the far side.
+		root:SetPoint("LEFT", UIParent, "CENTER", 250, 40)
 	end
 	root:SetScale(self.db.scale)
 end

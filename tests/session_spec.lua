@@ -164,9 +164,25 @@ describe("Session + triggers", function()
 		assert.equal(0, mock.lastSpoken().voiceID)
 	end)
 
-	it("uses the player's TTS voice setting by default", function()
+	it("picks a random installed voice per story when none is pinned", function()
 		slash("")
-		assert.equal(1, mock.lastSpoken().voiceID)
+		local seen = {}
+		for _ = 1, 20 do
+			seen[mock.lastSpoken().voiceID] = true
+			slash("next")
+		end
+		assert.is_true(seen[0] and seen[1], "both voices used")
+	end)
+
+	it("a pinned voice is used for every story; random unpins it", function()
+		slash("voice 2")
+		slash("")
+		for _ = 1, 5 do
+			assert.equal(1, mock.lastSpoken().voiceID)
+			slash("next")
+		end
+		slash("voice random")
+		assert.is_nil(_G.OrcTokDB.voiceID)
 	end)
 
 	it("runs captions-only when the client has no voices", function()

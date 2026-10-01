@@ -17,7 +17,7 @@ captions.
 | `/orctok` | toggle the phone |
 | `/orctok auto` | toggle auto-start on flight paths |
 | `/orctok next` | skip to the next story |
-| `/orctok voice [n\|default]` | list or pick a TTS voice |
+| `/orctok voice [n\|random]` | list voices, pin one, or a random voice per story (default) |
 | `/orctok rate <-10..10>` / `volume <0..100>` | speech speed / volume |
 | `/orctok scale <0.5..2>` | phone size (Shift-drag to move, right-click to close) |
 | `/orctok captions` | toggle word-synced captions (SAPI bookmarks) |

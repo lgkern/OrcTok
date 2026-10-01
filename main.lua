@@ -57,7 +57,7 @@ local HELP = {
 	"/orctok - toggle the phone",
 	"/orctok auto - toggle auto-start on flight paths",
 	"/orctok next - skip to the next story",
-	"/orctok voice [n|default] - list or pick a TTS voice",
+	"/orctok voice [n|random] - list voices, pin one, or go back to a random voice per story",
 	"/orctok rate <-10..10> - speech speed",
 	"/orctok volume <0..100> - speech volume",
 	"/orctok scale <0.5..2> - phone size",
@@ -91,9 +91,9 @@ function commands.voice(arg)
 		say("no text-to-speech voices found. Captions will still play.")
 		return
 	end
-	if arg == "default" then
+	if arg == "random" then
 		ns.db.voiceID = nil
-		say("using your Text to Speech voice setting.")
+		say("a random voice for every story.")
 		return
 	end
 	local n = tonumber(arg)
@@ -102,11 +102,14 @@ function commands.voice(arg)
 		say("voice set to " .. voices[n].name .. ".")
 		return
 	end
-	local current = Session.voice()
 	for i, v in ipairs(voices) do
-		say(string.format("%d. %s%s", i, v.name, v.voiceID == current and "  (current)" or ""))
+		say(string.format("%d. %s%s", i, v.name, v.voiceID == ns.db.voiceID and "  (picked)" or ""))
 	end
-	say("pick one with /orctok voice <n>.")
+	if ns.db.voiceID then
+		say("pick another with /orctok voice <n>, or /orctok voice random.")
+	else
+		say("random voice per story. Pin one with /orctok voice <n>.")
+	end
 end
 
 function commands.rate(arg)

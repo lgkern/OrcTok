@@ -53,7 +53,7 @@ Config.TUNE = {
 
 Config.DEFAULTS = {
 	auto = true,        -- start on flight paths
-	voiceID = nil,      -- nil = the player's Standard TTS voice
+	voiceID = nil,      -- nil = a random installed voice per story
 	rate = 1,           -- SAPI rate -10..10 (TikTok voice is a bit fast)
 	volume = 100,
 	bookmarks = true,   -- word-synced captions via SAPI bookmarks (Windows)

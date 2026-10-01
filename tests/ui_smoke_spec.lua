@@ -163,7 +163,7 @@ describe("UI smoke", function()
 	end)
 
 	it("slash commands all run", function()
-		for _, cmd in ipairs({ "auto", "next", "voice", "voice 2", "voice default", "rate 3", "volume 50", "scale 1.2", "captions", "reset", "debug", "help", "bogus" }) do
+		for _, cmd in ipairs({ "auto", "next", "voice", "voice 2", "voice", "voice random", "rate 3", "volume 50", "scale 1.2", "captions", "reset", "debug", "help", "bogus" }) do
 			_G.SlashCmdList.ORCTOK(cmd)
 		end
 	end)
