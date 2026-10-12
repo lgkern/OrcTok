@@ -19,5 +19,6 @@ ui\ground.lua
 ui\scene.lua
 ui\phone.lua
 ui\tune.lua
+ui\options.lua
 core\session.lua
 main.lua

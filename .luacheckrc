@@ -15,6 +15,7 @@ read_globals = {
 	"C_VoiceChat", "C_TTSSettings", "Enum",
 	"CreateColor", "SetPortraitTexture", "PlaySound", "SOUNDKIT",
 	"GetCursorPosition", "IsShiftKeyDown",
+	"Settings", "MinimalSliderWithSteppersMixin", "CreateSettingsButtonInitializer",
 }
 
 ignore = {

@@ -51,6 +51,7 @@ describe("Session + triggers", function()
 		H.load({ "stories.lua" }, ns)
 		phone = fakePhone()
 		ns.Phone = { create = function() return phone end }
+		ns.Options = { Register = function() end }
 		H.load({ "core/session.lua", "main.lua" }, ns)
 		mock.fireEvent("ADDON_LOADED", "OrcTok")
 	end)

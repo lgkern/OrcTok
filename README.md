@@ -15,6 +15,7 @@ captions.
 | Command | Effect |
 |---|---|
 | `/orctok` | toggle the phone |
+| `/orctok options` (or `settings`) | open the OrcTok page in Options > AddOns |
 | `/orctok auto` | toggle auto-start on flight paths |
 | `/orctok next` | skip to the next story |
 | `/orctok voice [n\|random]` | list voices, pin one, or a random voice per story (default) |

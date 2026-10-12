@@ -5,7 +5,7 @@ local H = dofile("tests/helpers.lua")
 -- return numbers. This cannot check layout or rendering. It does catch Lua
 -- errors: typos, nil fields, bad arithmetic, wrong call order.
 describe("UI smoke", function()
-	local mock, ns, created
+	local mock, ns, created, settings
 
 	local NUMBERS = { GetHeight = 480, GetWidth = 270, GetStringWidth = 120, GetStringHeight = 34, GetFrameLevel = 1, GetValue = 0, GetEffectiveScale = 1 }
 	local CHILDREN = { TitleText = true }
@@ -63,8 +63,35 @@ describe("UI smoke", function()
 		_G.DEFAULT_CHAT_FRAME = { AddMessage = function() end }
 		_G.SlashCmdList = {}
 		_G.OrcTokDB = nil
+		-- Settings API fake: records proxy settings and controls.
+		settings = { proxies = {}, controls = {}, buttons = {} }
+		local function control(_, s, options) settings.controls[#settings.controls + 1] = { setting = s, options = options } end
+		_G.Settings = {
+			VarType = { Boolean = "boolean", Number = "number" },
+			RegisterVerticalLayoutCategory = function(name)
+				return { name = name, GetID = function() return 42 end },
+					{ AddInitializer = function(_, init) settings.buttons[#settings.buttons + 1] = init end }
+			end,
+			RegisterProxySetting = function(_, variable, varType, name, default, get, set)
+				local s = { variable = variable, varType = varType, default = default, get = get, set = set, NotifyUpdate = function() end }
+				settings.proxies[variable] = s
+				return s
+			end,
+			CreateCheckbox = control,
+			CreateSlider = control,
+			CreateDropdown = control,
+			CreateSliderOptions = function() return { SetLabelFormatter = function(o, _, fmt) o.format = fmt end } end,
+			CreateControlTextContainer = function()
+				local data = {}
+				return { Add = function(_, value, label) data[#data + 1] = { value = value, label = label } end, GetData = function() return data end }
+			end,
+			RegisterAddOnCategory = function(c) settings.registered = c end,
+			OpenToCategory = function(id) settings.opened = id end,
+		}
+		_G.MinimalSliderWithSteppersMixin = { Label = { Right = 2 } }
+		_G.CreateSettingsButtonInitializer = function(name, text, onClick) return { name = name, onClick = onClick } end
 		ns = H.load()
-		H.load({ "stories.lua", "ui/ground.lua", "ui/scene.lua", "ui/phone.lua", "ui/tune.lua", "core/session.lua", "main.lua" }, ns)
+		H.load({ "stories.lua", "ui/ground.lua", "ui/scene.lua", "ui/phone.lua", "ui/tune.lua", "ui/options.lua", "core/session.lua", "main.lua" }, ns)
 		mock.fireEvent("ADDON_LOADED", "OrcTok")
 	end)
 
@@ -162,8 +189,49 @@ describe("UI smoke", function()
 		assert.are_not.equal(first, phone.scene.sim) -- fresh course
 	end)
 
+	it("options page reads and writes OrcTokDB", function()
+		local p = settings.proxies
+		assert.equal("OrcTok", settings.registered.name)
+		_G.SlashCmdList.ORCTOK("options")
+		assert.equal(42, settings.opened)
+
+		-- Voice: random maps to nil, a pick to its voiceID; the dropdown lists both.
+		assert.equal(-1, p.ORCTOK_VOICEID.get())
+		p.ORCTOK_VOICEID.set(mock.voices[1].voiceID)
+		assert.equal(mock.voices[1].voiceID, ns.db.voiceID)
+		p.ORCTOK_VOICEID.set(-1)
+		assert.is_nil(ns.db.voiceID)
+		for _, c in ipairs(settings.controls) do
+			if c.setting == p.ORCTOK_VOICEID then
+				assert.equal(#mock.voices + 1, #c.options())
+			elseif type(c.options) == "table" then
+				assert.is_string(c.options.format(1))
+			end
+		end
+
+		-- Volume applies to the story already playing.
+		_G.SlashCmdList.ORCTOK("")
+		p.ORCTOK_VOLUME.set(30)
+		assert.equal(30, ns.db.volume)
+		mock.fireEvent("VOICE_CHAT_TTS_SPEAK_TEXT_UPDATE", 0, 1)
+		mock.fireEvent("VOICE_CHAT_TTS_PLAYBACK_STARTED", 1)
+		mock.now = mock.now + 30
+		mock.fireEvent("VOICE_CHAT_TTS_PLAYBACK_FINISHED", 1)
+		assert.equal(30, mock.spoken[#mock.spoken].volume)
+
+		-- Checkboxes return booleans even for keys without a saved value.
+		assert.is_false(p.ORCTOK_DEBUG.get())
+		p.ORCTOK_DEBUG.set(true)
+		assert.is_true(ns.db.debug)
+
+		p.ORCTOK_SCALE.set(1.5)
+		assert.equal(1.5, ns.db.scale)
+		settings.buttons[1].onClick()
+		assert.equal(1, ns.db.scale)
+	end)
+
 	it("slash commands all run", function()
-		for _, cmd in ipairs({ "auto", "next", "voice", "voice 2", "voice", "voice random", "rate 3", "volume 50", "scale 1.2", "captions", "reset", "debug", "help", "bogus" }) do
+		for _, cmd in ipairs({ "options", "settings", "auto", "next", "voice", "voice 2", "voice", "voice random", "rate 3", "volume 50", "scale 1.2", "captions", "reset", "debug", "help", "bogus" }) do
 			_G.SlashCmdList.ORCTOK(cmd)
 		end
 	end)

@@ -107,6 +107,13 @@ function Session.PlayNext()
 	}, GetTime())
 end
 
+-- Volume applies from the next sentence chunk: SpeakText takes it per utterance.
+function Session.SetVolume(v)
+	Session.db.volume = v
+	local opts = Session.narrator.opts
+	if opts then opts.volume = v end
+end
+
 function Session.onStoryDone()
 	Session.phone:ShowEndCard()
 	local token = Session.token

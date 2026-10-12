@@ -33,6 +33,7 @@ events:SetScript("OnEvent", function(_, event, arg)
 		OrcTokDB = ns.Config.init(OrcTokDB or {})
 		ns.db = OrcTokDB
 		Session.init(ns.db)
+		ns.Options.Register()
 		C_Timer.NewTicker(TAXI_POLL, ns.checkTaxi)
 	elseif event == "PLAYER_REGEN_DISABLED" then
 		-- A manual session is for long runs; a fight ends it.
@@ -55,6 +56,7 @@ end
 -- ----- slash commands ----------------------------------------------------------
 local HELP = {
 	"/orctok - toggle the phone",
+	"/orctok options - open the settings page",
 	"/orctok auto - toggle auto-start on flight paths",
 	"/orctok next - skip to the next story",
 	"/orctok voice [n|random] - list voices, pin one, or go back to a random voice per story",
@@ -120,8 +122,8 @@ end
 
 function commands.volume(arg)
 	local v = clampNum(arg, 0, 100)
-	if v then ns.db.volume = v end
-	say("volume " .. ns.db.volume .. ". Applies from the next story.")
+	if v then Session.SetVolume(v) end
+	say("volume " .. ns.db.volume .. ".")
 end
 
 function commands.scale(arg)
@@ -143,11 +145,20 @@ function commands.tune()
 	ns.Tune.Toggle()
 end
 
-function commands.reset()
+function ns.resetPhone()
 	ns.db.point, ns.db.scale = nil, 1
 	if Session.phone then Session.phone:RestorePosition() end
+end
+
+function commands.reset()
+	ns.resetPhone()
 	say("phone position and size reset.")
 end
+
+function commands.options()
+	ns.Options.Open()
+end
+commands.settings = commands.options
 
 function commands.debug()
 	ns.db.debug = not ns.db.debug
